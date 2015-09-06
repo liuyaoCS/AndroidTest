@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.example.view.PullRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+			<include 
+			    android:id="@+id/pull_top"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    layout="@layout/control_search_header"
+			    android:layout_marginTop="-155dp"
+			    android:visibility="visible"/>
+	        <View
+	            android:id="@+id/lstCards"
+	            android:layout_below="@id/pull_top"
+	            android:layout_marginTop="-55dp"
+	            android:layout_width="match_parent"
+	            android:layout_height="400dp"
+	            android:descendantFocusability="beforeDescendants" />
+        </RelativeLayout>
+    </com.example.view.PullRefreshLayout>
+   <include
+	        android:id="@+id/control_serach_bar_layout"
+	        android:layout_width="match_parent"
+        	android:layout_height="48dp"
+	        android:layout_marginTop="228dip"
+	        layout="@layout/activity_my_view"
+	        android:layout_marginLeft="6dip"
+	        android:layout_marginRight="6dip" 
+	        android:visibility="visible"
+	        /> 
+    
+
+</RelativeLayout>

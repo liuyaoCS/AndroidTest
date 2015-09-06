@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" >  
+  
+    <ScrollView   
+        android:orientation="vertical"  
+        android:layout_width="fill_parent"  
+        android:layout_height="0dp"  
+        android:layout_weight="1">  
+        <LinearLayout   
+            android:orientation="vertical"  
+            android:layout_width="match_parent"  
+            android:layout_height="match_parent">  
+            <LinearLayout  
+                android:id="@+id/layout"   
+                android:orientation="horizontal"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_margin="5dp">  
+                <EditText  
+                    android:id="@+id/et_url"  
+                    android:layout_width="0dp"  
+                    android:layout_height="wrap_content"  
+                    android:layout_weight="1"  
+                    android:inputType="textUri"  
+                    android:focusable="false"
+                    android:singleLine="true"  
+                    android:layout_margin="5dp"/>  
+          
+                <Button  
+                    android:id="@+id/btn_visit"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_margin="5dp"  
+                    android:text="visit"  
+                    android:textSize="10sp" />  
+                  
+            </LinearLayout>  
+      		 <TextView 
+                 android:id="@+id/view"  
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+             <EditText 
+                android:id="@+id/edit"  
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <WebView  
+                android:id="@+id/web"  
+                android:layout_width="400dp"  
+                android:layout_height="600dp"/>  
+            
+        </LinearLayout>  
+    </ScrollView>  
+    <LinearLayout  
+       android:id="@+id/ll_btn"  
+       android:orientation="horizontal"  
+       android:layout_width="fill_parent"  
+       android:layout_height="wrap_content"  
+       android:gravity="center_horizontal">  
+       <Button   
+           android:id="@+id/btn_home"  
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"  
+           android:layout_weight="1"  
+           android:text="home"/>  
+       <Button   
+           android:id="@+id/btn_left"  
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"  
+           android:layout_weight="1"  
+           android:text="left"/>  
+       <Button   
+           android:id="@+id/btn_right"  
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"  
+           android:layout_weight="1"  
+           android:text="right"/>  
+       <Button   
+           android:id="@+id/btn_exit"  
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"  
+           android:layout_weight="1"  
+           android:text="exit"/>  
+    </LinearLayout>  
+   <!--   <com.example.androidTest.GifView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>-->
+  
+</LinearLayout>  

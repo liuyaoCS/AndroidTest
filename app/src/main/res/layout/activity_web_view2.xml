@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.chinaso.so.swiperefresh.SwipeRefreshLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh">
+        <ScrollView 
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent">
+           <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:orientation="vertical"
+        	android:background="#00ffffff"
+            >
+	           <!-- <WebView 
+	            android:id="@+id/web1"
+	             android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"/>
+		         <WebView 
+		            android:id="@+id/web2"
+		             android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"/>
+	          <WebView 
+	            android:id="@+id/web3"
+	             android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"/> --> 
+        </LinearLayout>
+        
+        </ScrollView>
+       
+          
+    </com.chinaso.so.swiperefresh.SwipeRefreshLayout>
+
+</RelativeLayout>

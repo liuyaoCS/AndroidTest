@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+	<FrameLayout 
+	     android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >
+        <RelativeLayout
+            android:id="@+id/v3_bk_layout"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:gravity="center_horizontal">
+		    <ImageView
+	            android:id="@+id/v3_bk"
+	            android:layout_width="@dimen/v3_bk_w"
+	            android:layout_height="@dimen/v3_bk_h"                 
+	            android:background="@drawable/v3_bk" 	           
+	         	android:layout_marginTop="@dimen/v3_bk_t"/>
+	  	</RelativeLayout>
+        
+	        
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           
+           android:id="@+id/v3_cloud1_layout"
+          >
+			<ImageView
+	            android:id="@+id/v3_cloud1"
+	            android:layout_width="@dimen/v3_cloud1_w"
+	            android:layout_height="@dimen/v3_cloud1_h"              
+				android:layout_marginTop="@dimen/v3_cloud1_t"                      
+	            android:src="@drawable/v3_cloud"
+	            android:visibility="invisible"
+	             />
+		</RelativeLayout>
+		
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           
+           android:id="@+id/v3_cloud2_layout"
+          >
+			<ImageView
+	            android:id="@+id/v3_cloud2"
+	            android:layout_width="@dimen/v3_cloud2_w"
+	            android:layout_height="@dimen/v3_cloud2_h"              
+				android:layout_marginTop="@dimen/v3_cloud2_t"                         
+	            android:src="@drawable/v3_cloud"
+	            android:visibility="invisible"
+	             />
+		</RelativeLayout>
+		<RelativeLayout
+            android:id="@+id/v3_moon_layout"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:gravity="center_horizontal">
+		    <ImageView
+	            android:id="@+id/v3_moon"
+	            android:layout_width="@dimen/v3_moon_w"
+	            android:layout_height="@dimen/v3_moon_h"                 
+	            android:background="@drawable/v3_moon" 	           
+	         	android:layout_marginTop="@dimen/v3_moon_t"/>
+	  </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           
+           android:id="@+id/v3_lamp_layout"
+          >
+			<ImageView
+	            android:id="@+id/v3_lamp"
+	            android:layout_width="@dimen/v3_lamp_w"
+	            android:layout_height="@dimen/v3_lamp_h"              
+				android:layout_marginTop="@dimen/v3_lamp_t"                         
+	            android:src="@drawable/v3_lamp"
+	            android:visibility="invisible"
+	             />
+		</RelativeLayout>
+		
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+                    
+           android:id="@+id/v3_light_layout"
+          >
+			<ImageView
+	            android:id="@+id/v3_light"
+	            android:layout_width="@dimen/v3_light_w"
+	            android:layout_height="@dimen/v3_light_h"              
+				android:layout_marginTop="@dimen/v3_light_t"                        
+	            android:src="@drawable/v3_light"
+	            android:visibility="invisible"
+	             />
+		</RelativeLayout>
+		
+		
+	</FrameLayout>
+
+	<ImageView
+	    android:id="@+id/v3_text1"
+	    android:layout_width="@dimen/v3_text1_w"
+	    android:layout_height="@dimen/v3_text1_h"
+	    android:layout_marginTop="@dimen/v3_text1_t"
+	    android:layout_marginLeft="50dp"
+	    android:layout_gravity="left"
+	    android:src="@drawable/v3_text1" 
+	    android:visibility="invisible"
+	    />
+	<ImageView
+	    android:id="@+id/v3_text2"
+	    android:layout_width="@dimen/v3_text2_w"
+	    android:layout_height="@dimen/v3_text2_h"
+	    android:layout_marginTop="@dimen/v3_text2_t"
+	    android:layout_marginRight="50dp"
+	    android:layout_gravity="right"
+	    android:src="@drawable/v3_text2" 
+	    android:visibility="invisible"
+	    />
+	<LinearLayout
+	    android:id="@+id/v3_mode_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/v3_mode_layout_t"
+	    android:gravity="center_horizontal"
+	    android:orientation="horizontal">
+	    <Button
+	        android:id="@+id/v3_list_button"
+	        android:layout_width="@dimen/v3_list_button_w"
+	        android:layout_height="@dimen/v3_list_button_h"       
+	        android:background="@drawable/v3_list_checked" 
+   			android:visibility="invisible"
+        />
+		<Button
+		    android:layout_marginLeft="25dp"
+	        android:id="@+id/v3_poster_button"
+	        android:layout_width="@dimen/v3_poster_button_w"
+	        android:layout_height="@dimen/v3_poster_button_h"	       
+	        android:background="@drawable/v3_poster_notchecked" 
+	   		android:visibility="invisible"
+	       />
+	</LinearLayout>
+	
+	<FrameLayout 
+	     android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >
+	    <Button
+	        android:id="@+id/v3_button"
+	        android:layout_width="@dimen/v3_button_w"
+	        android:layout_height="@dimen/v3_button_h"
+	        android:layout_marginTop="@dimen/v3_button_t"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/v3_button"
+	        android:visibility="invisible" />
+	    <ImageView
+	        android:id="@+id/v3_button_light"
+	        android:layout_width="@dimen/v3_button_light_w"
+	        android:layout_height="@dimen/v3_button_light_h"
+	        android:layout_marginTop="@dimen/v3_button_light_t"
+	        android:layout_gravity="center_horizontal"
+	        android:src="@drawable/v3_button_light"
+	        android:visibility="invisible"
+        />
+    </FrameLayout>
+
+</LinearLayout>

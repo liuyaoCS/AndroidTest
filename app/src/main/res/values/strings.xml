@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">hello</string>
+    <string name="app_name">androidtest</string>
+    <string name="title_activity_show_view">showview</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <string name="title_activity_share2">Share2Activity</string>
+    <string name="title_activity_um_share">UmShareActivity</string>
+    <string name="title_activity_animation3">Animation3Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_content_provider">ContentProviderActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fragment_test">FragmentTestActivity</string>
+    <string name="title_activity_adapter">AdapterActivity</string>
+    <string name="title_activity_async">AsyncActivity</string>
+    <string name="title_activity_net">NetActivity</string>
+    <string name="title_activity_resource">ResourceActivity</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"   
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    >
+    <!-- <LinearLayout 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	   > 
+	    <Button 
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:id="@+id/common_btn"
+	  	    android:text="common_test"/> 
+	  	<Button 
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:id="@+id/webview_btn"
+	  	    android:text="webview_test"/>
+	  	<Button 
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:id="@+id/webview2_btn"
+	  	    android:text="webview2_test"/>
+	  	<Button 
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:id="@+id/animation_btn"
+	  	    android:text="animation_test"/>
+	  	<Button 
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:id="@+id/animation2_btn"
+	  	    android:text="animation2_test"/>
+	  	<Button 
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:id="@+id/scroller_btn"
+	  	    android:text="scroller_test"/>
+	  	<Button 
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:id="@+id/myview_btn"
+	  	    android:text="myview_test"/>
+	  	
+	  	<Button 
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:id="@+id/photo_btn"
+	  	    android:text="photo_test"/>
+	  	
+	  	<Button 
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:id="@+id/shader_btn"
+	  	    android:text="shader_test"/>
+	  	
+	  	<Button 
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:id="@+id/wave_btn"
+	  	    android:text="wave_test"/>
+
+	</LinearLayout>  -->
+	<ListView  android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	    ></ListView>
+	<com.example.view.PullDoorView
+        android:id="@+id/myImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddd" >
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="slip up"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </com.example.view.PullDoorView>
+</FrameLayout>
+ 

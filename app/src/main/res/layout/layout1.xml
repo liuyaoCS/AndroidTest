@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/v1_earth_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal" >
+"
+
+            <ImageView
+                android:id="@+id/v1_earth"
+                android:layout_width="@dimen/v1_earth_w"
+                android:layout_height="@dimen/v1_earth_h"
+                android:layout_marginTop="@dimen/v1_earth_t"
+                android:background="@drawable/v1_earth" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/v1_boo_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="76dp" >
+
+            <ImageView
+                android:id="@+id/v1_boo"
+                android:layout_width="@dimen/v1_boo_w"
+                android:layout_height="@dimen/v1_boo_h"
+                android:layout_marginTop="@dimen/v1_boo_t"
+                android:src="@drawable/v1_boo01" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/v1_line_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="132dp" >
+
+            <ImageView
+                android:id="@+id/v1_line"
+                android:layout_width="@dimen/v1_line_w"
+                android:layout_height="@dimen/v1_line_h"
+                android:layout_marginTop="@dimen/v1_line_t"
+                android:src="@drawable/v1_line"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/v1_cloud1_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="77dp" >
+
+            <ImageView
+                android:id="@+id/v1_cloud1"
+                android:layout_width="@dimen/v1_cloud1_w"
+                android:layout_height="@dimen/v1_cloud1_h"
+                android:layout_marginTop="@dimen/v1_cloud1_t"
+                android:src="@drawable/v1_cloud1"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <!-- <RelativeLayout
+            android:id="@+id/v1_cloud2_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="77dp" >
+
+            <ImageView
+                android:id="@+id/v1_cloud2"
+                android:layout_width="@dimen/v1_cloud2_w"
+                android:layout_height="@dimen/v1_cloud2_h"
+                android:layout_marginTop="@dimen/v1_cloud2_t"
+                android:src="@drawable/v1_cloud2"
+                android:visibility="invisible" />
+        </RelativeLayout> -->
+
+        <RelativeLayout
+            android:id="@+id/v1_plane_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="132dp" >
+
+            <ImageView
+                android:id="@+id/v1_plane"
+                android:layout_width="@dimen/v1_plane_w"
+                android:layout_height="@dimen/v1_plane_h"
+                android:layout_marginTop="@dimen/v1_plane_t"
+                android:src="@drawable/v1_plane"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/v1_text1"
+        android:layout_width="@dimen/v1_text1_w"
+        android:layout_height="@dimen/v1_text1_h"
+        android:layout_marginTop="@dimen/v1_text1_t"
+        android:src="@drawable/v1_text1"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/v1_text2"
+        android:layout_width="@dimen/v1_text2_w"
+        android:layout_height="@dimen/v1_text2_h"
+        android:layout_marginTop="@dimen/v1_text2_t"
+        android:src="@drawable/v1_text2"
+        android:visibility="invisible" />
+
+</LinearLayout>

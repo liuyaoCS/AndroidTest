@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+   
+	<!-- lauch_animation_setting -->
+	<dimen name="sliding_t">687px</dimen>
+	<dimen name="sliding_w">105px</dimen>
+	<dimen name="sliding_h">10px</dimen>
+	<dimen name="slidingdot_w">33px</dimen>
+	<dimen name="slidingdot_h">10px</dimen>
+	
+	<dimen name="v1_earth_t">52px</dimen>	
+	<dimen name="v1_earth_w">356px</dimen>
+	<dimen name="v1_earth_h">375px</dimen>
+	<dimen name="v1_boo_t">26px</dimen>
+	<dimen name="v1_boo_w">60px</dimen>
+	<dimen name="v1_boo_h">86px</dimen>
+	<dimen name="v1_line_t">346px</dimen>
+	<dimen name="v1_line_w">143px</dimen>
+	<dimen name="v1_line_h">133px</dimen>
+	<dimen name="v1_cloud1_t">348px</dimen>
+	<dimen name="v1_cloud1_w">187px</dimen>
+	<dimen name="v1_cloud1_h">87px</dimen>
+	<dimen name="v1_cloud2_t">348px</dimen>
+	<dimen name="v1_cloud2_w">187px</dimen>
+	<dimen name="v1_cloud2_h">87px</dimen>
+	<dimen name="v1_plane_t">346px</dimen>
+	<dimen name="v1_plane_w">81px</dimen>
+	<dimen name="v1_plane_h">81px</dimen>
+	<dimen name="v1_text1_t">8px</dimen>
+	<dimen name="v1_text1_w">253px</dimen>
+	<dimen name="v1_text1_h">62px</dimen>
+	<dimen name="v1_text2_t">5px</dimen>
+	<dimen name="v1_text2_w">200px</dimen>
+	<dimen name="v1_text2_h">40px</dimen>
+	
+	<dimen name="v2_glass_t">52px</dimen>
+	<dimen name="v2_glass_w">356px</dimen>
+	<dimen name="v2_glass_h">375px</dimen>
+	<dimen name="v2_star_t">90px</dimen>
+	<dimen name="v2_star_w">285px</dimen>
+	<dimen name="v2_star_h">301px</dimen> 
+	<dimen name="v2_rotate_t">90px</dimen>
+	<dimen name="v2_rotate_w">285px</dimen>
+	<dimen name="v2_rotate_h">301px</dimen>
+	<dimen name="v2_cloud_t">77px</dimen>
+	<dimen name="v2_cloud_w">96px</dimen>
+	<dimen name="v2_cloud_h">37px</dimen>
+	<dimen name="v2_text1_t">48px</dimen>
+	<dimen name="v2_text1_w">253px</dimen>
+	<dimen name="v2_text1_h">62px</dimen>
+	<dimen name="v2_text2_t">5px</dimen>
+	<dimen name="v2_text2_w">200px</dimen>
+	<dimen name="v2_text2_h">40px</dimen>
+	
+	
+	<dimen name="v3_bk_t">52px</dimen>
+	<dimen name="v3_bk_w">356px</dimen>
+	<dimen name="v3_bk_h">375px</dimen>
+	<dimen name="v3_cloud1_t">130px</dimen>
+	<dimen name="v3_cloud1_w">66px</dimen>
+	<dimen name="v3_cloud1_h">22px</dimen>
+	<dimen name="v3_cloud2_t">202px</dimen>
+	<dimen name="v3_cloud2_w">66px</dimen>
+	<dimen name="v3_cloud2_h">22px</dimen>
+	<dimen name="v3_moon_t">52px</dimen>
+	<dimen name="v3_moon_w">356px</dimen>
+	<dimen name="v3_moon_h">375px</dimen>
+	<dimen name="v3_lamp_t">188px</dimen>
+	<dimen name="v3_lamp_w">193px</dimen>
+	<dimen name="v3_lamp_h">131px</dimen>
+	<dimen name="v3_light_t">188px</dimen>
+	<dimen name="v3_light_w">193px</dimen>
+	<dimen name="v3_light_h">131px</dimen>
+	<dimen name="v3_text1_t">3px</dimen>
+	<dimen name="v3_text1_w">143px</dimen>
+	<dimen name="v3_text1_h">37px</dimen>
+	<dimen name="v3_text2_t">3px</dimen>
+	<dimen name="v3_text2_w">231px</dimen>
+	<dimen name="v3_text2_h">37px</dimen>
+	<dimen name="v3_mode_layout_t">20px</dimen>
+	<dimen name="v3_list_button_w">97px</dimen>
+	<dimen name="v3_list_button_h">37px</dimen>
+	<dimen name="v3_poster_button_w">97px</dimen>
+	<dimen name="v3_poster_button_h">37px</dimen>
+	<dimen name="v3_button_t">20px</dimen>
+	<dimen name="v3_button_w">193px</dimen>
+	<dimen name="v3_button_h">62px</dimen>
+	<dimen name="v3_button_light_t">20px</dimen>
+	<dimen name="v3_button_light_w">200px</dimen>
+	<dimen name="v3_button_light_h">66px</dimen>
+	
+</resources> 
