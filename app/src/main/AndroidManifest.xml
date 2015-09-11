@@ -293,7 +293,9 @@
         </activity>
         <activity
             android:name="com.example.experience.MyActivity"
-            android:label="@string/title_activity_my" >
+            android:label="@string/title_activity_my"
+            android:configChanges="screenSize"
+            >
         </activity>
 
         <receiver

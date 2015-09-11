@@ -8,6 +8,7 @@ import android.content.ServiceConnection;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.os.PersistableBundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -38,7 +39,7 @@ public class MyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-
+        Log.i("ly", "oncreate");
         MyReceiver rec=new MyReceiver();
         IntentFilter filter=new IntentFilter(ACTION_BROADCAST);
         registerReceiver(rec,filter);
@@ -155,8 +156,26 @@ public class MyActivity extends Activity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("ly", "onresume");
+    }
+
+    @Override
     protected void onStop() {
         super.onStop();
-        Log.i("ly", "onstop");
+        Log.i("ly", "onstop ");
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
+        Log.i("ly", "onSaveInstanceState");
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState, PersistableBundle persistentState) {
+        super.onRestoreInstanceState(savedInstanceState, persistentState);
+        Log.i("ly", "onRestoreInstanceState");
     }
 }
