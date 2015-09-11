@@ -164,7 +164,7 @@ public class MyActivity extends Activity {
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i("ly", "onstop");
+        Log.i("ly", "onstop ");
     }
 
     @Override
