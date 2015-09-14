@@ -19,5 +19,6 @@
     <string name="title_activity_async">AsyncActivity</string>
     <string name="title_activity_net">NetActivity</string>
     <string name="title_activity_resource">ResourceActivity</string>
+    <string name="title_activity_view_test">ViewTestActivity</string>
 
 </resources>

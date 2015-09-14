@@ -293,9 +293,8 @@
         </activity>
         <activity
             android:name="com.example.experience.MyActivity"
-            android:label="@string/title_activity_my"
             android:configChanges="screenSize"
-            >
+            android:label="@string/title_activity_my" >
         </activity>
 
         <receiver
@@ -334,6 +333,10 @@
         <activity
             android:name="com.example.experience.NetActivity"
             android:label="@string/title_activity_net" >
+        </activity>
+        <activity
+            android:name="com.example.experience.ViewTestActivity"
+            android:label="@string/title_activity_view_test" >
         </activity>
     </application>
 

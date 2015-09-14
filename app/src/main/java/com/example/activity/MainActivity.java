@@ -10,6 +10,7 @@ import com.example.experience.FragmentTestActivity;
 import com.example.experience.MyActivity;
 import com.example.experience.NetActivity;
 import com.example.experience.ResourceActivity;
+import com.example.experience.ViewTestActivity;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.update.UmengUpdateAgent;
 
@@ -83,6 +84,7 @@ public class MainActivity extends Activity{
 				new Item("animation",AnimationActivity.class),new Item("animation2",Animation2Activity.class),new Item("animation3",Animation3Activity.class),
 				new Item("scroller",ScrollerActivity.class),new Item("ViewScroll",ViewScrollActivity.class),
 				new Item("myview",MyViewActivity.class),
+				new Item("viewtest",ViewTestActivity.class),
 				new Item("gif",GifActivity.class),
 				new Item("photo",SurfaceActivity.class),
 				new Item("video",VideoActivity.class),

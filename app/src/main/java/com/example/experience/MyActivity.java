@@ -152,13 +152,13 @@ public class MyActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
-        Log.i("ly", "onpause");
+        Log.i("ly", "onpause ");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i("ly", "onresume");
+        Log.i("ly", "onresume ");
     }
 
     @Override
