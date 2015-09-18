@@ -279,10 +279,7 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         </activity>
-        <activity
-            android:name="com.example.activity.ShareActivityTest"
-            android:label="@string/title_activity_share" >
-        </activity>
+
         <activity
             android:name="com.example.activity.UmShareActivity"
             android:label="@string/title_activity_um_share" >
