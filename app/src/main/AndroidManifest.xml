@@ -338,6 +338,10 @@
             android:name="com.example.experience.ViewTestActivity"
             android:label="@string/title_activity_view_test" >
         </activity>
+        <activity
+            android:name="com.example.experience.DraggerViewActivity"
+            android:label="@string/title_activity_dragger_view" >
+        </activity>
     </application>
 
 </manifest>

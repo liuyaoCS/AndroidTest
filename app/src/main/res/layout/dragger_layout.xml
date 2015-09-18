@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="#6066ff7f"
+    android:padding="3dp">
+
+<RelativeLayout
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:background="#665a65"
+    android:id="@+id/dragger_container"
+ >
+
+    <TextView
+        android:id="@+id/cap_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="12dip"
+        android:text="通用"
+        android:textSize="12sp"
+        android:layout_marginRight="12dip" />
+    <TextView
+        android:id="@+id/cap_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/cap_general"
+        android:layout_marginLeft="12dip"
+        android:text="扫一扫"
+        android:textSize="12sp"
+        android:layout_marginRight="12dip" />
+    <TextView
+        android:id="@+id/cap_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toRightOf="@id/cap_general"
+        android:layout_marginLeft="12dip"
+        android:text="明星脸"
+        android:textSize="12sp"
+        android:layout_marginRight="12dip" />
+</RelativeLayout>
+</RelativeLayout>

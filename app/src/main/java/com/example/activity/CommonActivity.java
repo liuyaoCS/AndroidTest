@@ -27,6 +27,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.provider.ContactsContract;
 import android.telephony.PhoneNumberUtils;
 import android.text.Html;
 import android.text.TextUtils;
@@ -210,24 +211,34 @@ public class CommonActivity extends Activity {
 		}, 1000);
         
         Button btn=(Button) this.findViewById(R.id.btn_flag);
-        btn.setOnClickListener(new OnClickListener(){
+        btn.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent it=new Intent();
-				Bundle bundle=new Bundle();
+				Intent it = new Intent();
+				Bundle bundle = new Bundle();
 				bundle.putString("content", "test");
 				it.putExtras(bundle);
 				it.setClass(CommonActivity.this, CommonActivity.class);
 				CommonActivity.this.startActivity(it);
-			}});
+			}
+		});
 
 		SharedPreferences sp=this.getSharedPreferences("test", MODE_PRIVATE);
 		sp.edit().putString("name","ly").commit();
 
 		SharedPreferences sp_read=getSharedPreferences("test",MODE_PRIVATE);
-		sp.getString("name"," ");
+		sp.getString("name", " ");
+
+
+		System.out.println(Environment.getExternalStorageDirectory().getPath());
+		System.out.println(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getPath());
+		System.out.println(this.getCacheDir().getPath());
+		System.out.println(this.getExternalCacheDir().getPath());
+
+
+
 
 	}
 	private void parseIntent() {

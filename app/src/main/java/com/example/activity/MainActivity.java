@@ -6,6 +6,7 @@ import cn.jpush.android.api.JPushInterface;
 import com.example.androidtest.R;
 import com.example.experience.AdapterActivity;
 import com.example.experience.AsyncActivity;
+import com.example.experience.DraggerViewActivity;
 import com.example.experience.FragmentTestActivity;
 import com.example.experience.MyActivity;
 import com.example.experience.NetActivity;
@@ -85,6 +86,7 @@ public class MainActivity extends Activity{
 				new Item("scroller",ScrollerActivity.class),new Item("ViewScroll",ViewScrollActivity.class),
 				new Item("myview",MyViewActivity.class),
 				new Item("viewtest",ViewTestActivity.class),
+				new Item("draggerviewtest", DraggerViewActivity.class),
 				new Item("gif",GifActivity.class),
 				new Item("photo",SurfaceActivity.class),
 				new Item("video",VideoActivity.class),
