@@ -51,7 +51,8 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher1"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        >
         <activity
             android:name="com.example.activity.MainActivity"
             android:label="@string/app_name"
@@ -337,7 +338,8 @@
         </activity>
         <activity
             android:name="com.example.experience.DraggerViewActivity"
-            android:label="@string/title_activity_dragger_view" >
+            android:label="@string/title_activity_dragger_view"
+            android:hardwareAccelerated="false">
         </activity>
     </application>
 

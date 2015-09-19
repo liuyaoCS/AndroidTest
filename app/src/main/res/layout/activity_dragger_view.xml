@@ -5,10 +5,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.experience.DraggerViewActivity">
-
-    <com.example.experience.DraggerView
-        android:id="@+id/draggerView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"></com.example.experience.DraggerView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wrapper">
+        <com.example.experience.DraggerView
+            android:id="@+id/draggerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></com.example.experience.DraggerView>
+    </FrameLayout>
 
 </RelativeLayout>

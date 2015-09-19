@@ -9,6 +9,7 @@ import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
+import android.widget.Scroller;
 import android.widget.TextView;
 
 import com.example.androidtest.R;
@@ -22,6 +23,7 @@ public class DraggerView extends LinearLayout {
 //    TextView scan,general,star;
 //    LinearLayout dragger_container;
 //    GestureDetectorCompat gd;
+//    private Scroller mScroller;
     public DraggerView(Context context) {
         super(context);
         init(context);
@@ -33,31 +35,15 @@ public class DraggerView extends LinearLayout {
     }
     private void init(Context context){
         LayoutInflater.from(context).inflate(R.layout.dragger_layout,this);
-//        scan= (TextView) findViewById(R.id.cap_scan);
-//        general= (TextView) findViewById(R.id.cap_general);
-//        star= (TextView) findViewById(R.id.cap_star);
-//        dragger_container= (LinearLayout) findViewById(R.id.dragger_container);
-//        gd=new GestureDetectorCompat(context,new GestureDetector.SimpleOnGestureListener(){
-//            @Override
-//            public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
-//                Log.i("ly","onScroll-->"+distanceX);
-//                dragger_container.scrollTo((int)distanceX,0);
-//                return super.onScroll(e1, e2, distanceX, distanceY);
-//            }
-//
-//            @Override
-//            public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-//                Log.i("ly","onFling-->"+velocityX);
-//                return super.onFling(e1, e2, velocityX, velocityY);
-//            }
-//
-//            @Override
-//            public boolean onDown(MotionEvent e) {
-//                Log.i("ly","onDown");
-//                return true;
-//            }
-//        });
     }
 
-
+    @Override
+    public void computeScroll() {
+        Log.i("ly","computeScroll");
+        if(DraggerViewActivity.scroller.computeScrollOffset()){
+            scrollTo(DraggerViewActivity.scroller.getCurrX(),0);
+            Log.i("ly", "Scroll...now" + DraggerViewActivity.scroller.getCurrX());
+            invalidate();
+        }
+    }
 }

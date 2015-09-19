@@ -40,7 +40,7 @@ public class MainActivity extends Activity{
 		this.setContentView(R.layout.activity_main);
 		UmengUpdateAgent.update(this);
 		init();
-		
+
 		
 	}
 	
