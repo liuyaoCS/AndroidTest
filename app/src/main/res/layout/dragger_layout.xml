@@ -4,12 +4,6 @@
     android:background="#6066ff7f"
     android:padding="3dp">
 
-<RelativeLayout
-    android:layout_width="fill_parent" android:layout_height="wrap_content"
-    android:background="#665a65"
-    android:id="@+id/dragger_container"
- >
-
     <TextView
         android:id="@+id/cap_general"
         android:layout_width="wrap_content"
@@ -41,5 +35,5 @@
         android:text="明星脸"
         android:textSize="12sp"
         android:layout_marginRight="12dip" />
-</RelativeLayout>
+
 </RelativeLayout>

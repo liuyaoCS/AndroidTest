@@ -16,16 +16,18 @@ import android.widget.TextView;
 import com.example.androidtest.R;
 
 public class DraggerViewActivity extends Activity {
-    GestureDetectorCompat gd;
+
     TextView scan,general,star;
-    RelativeLayout dragger_container;
     DraggerView draggerView;
+    private ViewGroup wrapper;
     int scan_l,scan_r;
     int general_l,general_r;
     int star_l,star_r;
     private  int MAX_DIS;
+
+    GestureDetectorCompat gd;
     public static Scroller scroller;
-    private ViewGroup wrapper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,13 +53,14 @@ public class DraggerViewActivity extends Activity {
         });
     }
     private void init(Context context){
-       // LayoutInflater.from(context).inflate(R.layout.dragger_layout,this);
+
         scan= (TextView) findViewById(R.id.cap_scan);
         general= (TextView) findViewById(R.id.cap_general);
         star= (TextView) findViewById(R.id.cap_star);
-        dragger_container= (RelativeLayout) findViewById(R.id.dragger_container);
+
         draggerView= (DraggerView) findViewById(R.id.draggerView);
         wrapper= (ViewGroup) findViewById(R.id.wrapper);
+
         gd=new GestureDetectorCompat(context,new GestureDetector.SimpleOnGestureListener(){
             @Override
             public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
@@ -76,15 +79,7 @@ public class DraggerViewActivity extends Activity {
                         draggerView.scrollBy((int) distanceX, 0);
                     }
                 }
-                //wrapper.invalidate();
-
                 return super.onScroll(e1, e2, distanceX, distanceY);
-            }
-
-            @Override
-            public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-               // Log.i("ly","onFling-->"+velocityX);
-                return super.onFling(e1, e2, velocityX, velocityY);
             }
 
 
@@ -103,26 +98,15 @@ public class DraggerViewActivity extends Activity {
                 }
 
                 if(scrollX>MAX_DIS/2){
-                    scroller.startScroll(scrollX, 0, MAX_DIS - scrollX, 0, 1000);
-                   // Log.i("ly", "begin left smooth 2 scroll-->"+(MAX_DIS - scrollX));
+                    scroller.startScroll(scrollX, 0, MAX_DIS - scrollX, 0, 500);
                 }else if(scrollX>0){
-                    scroller.startScroll(scrollX, 0, 0 - scrollX, 0, 1000);
-                  //  Log.i("ly", "begin left smooth 1 scroll-->"+(0- scrollX));
+                    scroller.startScroll(scrollX, 0, 0 - scrollX, 0, 500);
                 }else if(scrollX>-MAX_DIS/2){
-                    //Log.i("ly", "begin right smooth 1 scroll-->"+(0- scrollX));
-                    scroller.startScroll(scrollX,0,0- scrollX,0,1000);
+                    scroller.startScroll(scrollX,0,0- scrollX,0,500);
                 }else if(scrollX>-MAX_DIS){
-                   // Log.i("ly", "begin right smooth 2 scroll-->"+(-MAX_DIS - scrollX));
-                    scroller.startScroll(scrollX,0,-MAX_DIS - scrollX,0,1000);
+                    scroller.startScroll(scrollX,0,-MAX_DIS - scrollX,0,500);
                 }
- //               Log.i("ly", " scrollX,scroller :"+scrollX+","+ scroller.getCurrX());
-//                if(scrollX>0){
-//                    scroller.startScroll(scrollX,0,0- scrollX,0,1000);
-//                    Log.i("ly", "begin left smooth 1 scroll-->"+(0- scrollX));
-//                }else {
-//                    Log.i("ly", "begin right smooth 1 scroll-->" + (0 - scrollX));
-//                    scroller.startScroll(0, 0, 0 - scrollX, 0, 1000);
-//                }
+
                 wrapper.invalidate();
                 break;
             default:
