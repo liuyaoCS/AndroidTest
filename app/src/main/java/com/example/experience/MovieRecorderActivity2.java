@@ -12,6 +12,7 @@ import android.view.*;
 import android.view.SurfaceHolder.Callback;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -84,10 +85,10 @@ public class MovieRecorderActivity2 extends Activity implements Callback {
                         camera.unlock();
                         mRecorder.setCamera(camera);
                         mRecorder
-                                .setAudioSource(MediaRecorder.AudioSource.CAMCORDER);// 这两项需要放在setOutputFormat之前
+                                .setAudioSource(MediaRecorder.AudioSource.MIC);// 这两项需要放在setOutputFormat之前
                         mRecorder
                                 .setVideoSource(MediaRecorder.VideoSource.CAMERA);// 设置录制视频源为Camera(相机)
-                        mRecorder.setOrientationHint(90);
+                        mRecorder.setOrientationHint(90+180); //back:90 front:270
                         // Set output file format
                         mRecorder
                                 .setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);// 设置录制完成后视频的封装格式THREE_GPP为3gp.MPEG_4为mp4
@@ -96,11 +97,11 @@ public class MovieRecorderActivity2 extends Activity implements Callback {
                         mRecorder
                                 .setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
                         mRecorder
-                                .setVideoEncoder(MediaRecorder.VideoEncoder.MPEG_4_SP);// 设置录制的视频编码h263
+                                .setVideoEncoder(MediaRecorder.VideoEncoder.H264);// 设置录制的视频编码h263
 
-                        mRecorder.setVideoSize(800, 480);// 设置视频录制的分辨率。必须放在设置编码和格式的后面，否则报错
-                        mRecorder.setVideoFrameRate(30);// 设置录制的视频帧率。必须放在设置编码和格式的后面，否则报错
-
+                        mRecorder.setVideoSize(1280, 720);// 设置视频录制的分辨率。必须放在设置编码和格式的后面，否则报错
+                        mRecorder.setVideoFrameRate(20);// 设置录制的视频帧率。必须放在设置编码和格式的后面，否则报错
+                        mRecorder.setVideoEncodingBitRate(8*1024*1024);
                         mRecorder.setMaxDuration(8000);// 设置最大的录制时间
                         mRecorder.setPreviewDisplay(mSurfaceHolder.getSurface());
 
@@ -168,7 +169,7 @@ public class MovieRecorderActivity2 extends Activity implements Callback {
         });
 
         SurfaceHolder holder = mSurfaceview.getHolder();// 取得holder
-
+//
         holder.addCallback(this); // holder加入回调接口
 
         holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);// setType必须设置，要不出错.
@@ -210,10 +211,10 @@ public class MovieRecorderActivity2 extends Activity implements Callback {
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width,
                                int height) {
-        camera = Camera.open(); // 获取Camera实例
+        camera = Camera.open(1); // 获取Camera实例
         try {
             camera.setPreviewDisplay(holder);
-            mSurfaceview.setLayoutParams(new LinearLayout.LayoutParams(width,
+            mSurfaceview.setLayoutParams(new RelativeLayout.LayoutParams(width,
                     height));
         } catch (Exception e) {
             // 如果出现异常，则释放Camera对象

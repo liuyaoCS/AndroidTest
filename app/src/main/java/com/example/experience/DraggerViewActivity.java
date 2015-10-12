@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.GestureDetectorCompat;
+import android.util.Base64;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -15,6 +16,9 @@ import android.widget.Scroller;
 import android.widget.TextView;
 
 import com.example.androidtest.R;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class DraggerViewActivity extends Activity {
 
@@ -100,7 +104,7 @@ public class DraggerViewActivity extends Activity {
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent event) {
+      public boolean onTouchEvent(MotionEvent event) {
         gd.onTouchEvent(event);
         int action=event.getAction();
         switch(action){
@@ -125,6 +129,8 @@ public class DraggerViewActivity extends Activity {
             default:
                 break;
         }
+
+
         return super.onTouchEvent(event);
     }
 }

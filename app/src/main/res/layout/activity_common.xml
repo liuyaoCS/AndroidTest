@@ -41,7 +41,7 @@
 	    android:src="@drawable/home_logo"/>
 	<ImageView 
 	    android:id="@+id/id4"
-	    android:visibility="gone"
+
 	     android:layout_below="@id/id3"
 	    android:layout_width="240dp"
 	    android:layout_height="60dp"

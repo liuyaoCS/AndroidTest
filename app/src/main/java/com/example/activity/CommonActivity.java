@@ -16,6 +16,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
@@ -48,6 +49,7 @@ import android.widget.Toast;
 
 public class CommonActivity extends Activity {
 	Handler handler;
+	ImageView id4;
 	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -238,7 +240,14 @@ public class CommonActivity extends Activity {
 		System.out.println(this.getExternalCacheDir().getPath());
 
 
-
+		id4= (ImageView) findViewById(R.id.id4);
+		Bitmap bitmap=BitmapFactory.decodeFile(Environment.getExternalStorageDirectory().getPath()+File.separator+"" +
+				"sample_picture_2015-08-22_14-46-37.jpg");
+		if(bitmap==null){
+			Log.e("ly","can not decode bitmap");
+		}else{
+			id4.setImageBitmap(bitmap);
+		}
 
 	}
 	private void parseIntent() {

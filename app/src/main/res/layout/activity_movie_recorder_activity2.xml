@@ -20,8 +20,8 @@
             android:id="@+id/btn"
             android:layout_width="66dp"
             android:layout_height="66dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/path2_composer_button" />
+            android:text="Start"
+  />
         <TextView
             android:id="@+id/time"
             android:layout_width="66dp"
