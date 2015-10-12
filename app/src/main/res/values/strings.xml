@@ -21,5 +21,8 @@
     <string name="title_activity_resource">ResourceActivity</string>
     <string name="title_activity_view_test">ViewTestActivity</string>
     <string name="title_activity_dragger_view">DraggerViewActivity</string>
+    <string name="title_activity_view_drag_helper_test">ViewDragHelperTestActivity</string>
+    <string name="title_activity_movie_recorder">MovieRecorderActivity</string>
+    <string name="title_activity_movie_recorder_activity2">MovieRecorderActivity2</string>
 
 </resources>

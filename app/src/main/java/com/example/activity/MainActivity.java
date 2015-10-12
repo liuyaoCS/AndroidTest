@@ -8,9 +8,12 @@ import com.example.experience.AdapterActivity;
 import com.example.experience.AsyncActivity;
 import com.example.experience.DraggerViewActivity;
 import com.example.experience.FragmentTestActivity;
+import com.example.experience.MovieRecorderActivity;
+import com.example.experience.MovieRecorderActivity2;
 import com.example.experience.MyActivity;
 import com.example.experience.NetActivity;
 import com.example.experience.ResourceActivity;
+import com.example.experience.ViewDragHelperTestActivity;
 import com.example.experience.ViewTestActivity;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.update.UmengUpdateAgent;
@@ -87,8 +90,11 @@ public class MainActivity extends Activity{
 				new Item("myview",MyViewActivity.class),
 				new Item("viewtest",ViewTestActivity.class),
 				new Item("draggerviewtest", DraggerViewActivity.class),
+				new Item("ViewDragHelperTest", ViewDragHelperTestActivity.class),
 				new Item("gif",GifActivity.class),
 				new Item("photo",SurfaceActivity.class),
+				new Item("record",MovieRecorderActivity.class),
+				new Item("record2",MovieRecorderActivity2.class),
 				new Item("video",VideoActivity.class),
 				new Item("shader",ShaderActivity.class),new Item("wave",WaveActivity.class),
 				new Item("iqiyi",IqiyiMainActivity.class),

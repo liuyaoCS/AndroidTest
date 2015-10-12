@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.RelativeLayout;
 import android.widget.Scroller;
 import android.widget.TextView;
@@ -40,6 +41,7 @@ public class DraggerViewActivity extends Activity {
             public void run() {
                 scan_l=scan.getLeft();
                 scan_r=scan.getRight();
+                Log.i("ly",""+scan.getHeight());
 
                 general_l=general.getLeft();
                 general_r=general.getRight();
@@ -49,6 +51,17 @@ public class DraggerViewActivity extends Activity {
 
                 MAX_DIS =scan.getWidth()+24*3;
                 Log.i("ly","measure-->"+scan_l+", "+star_r);
+            }
+        });
+        general.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+
+                Log.i("ly","LayoutListener "+scan.getHeight());
+                if(scan.getHeight()!=0){
+                    general.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                    //updateUI();
+                }
             }
         });
     }
