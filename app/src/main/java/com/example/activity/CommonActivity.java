@@ -61,6 +61,7 @@ public class CommonActivity extends Activity {
 		parseIntent();
 		
 		String str1=null;
+		str1.charAt(0);
         String str2="";
         Log.i("ly", "empty? "+TextUtils.isEmpty(str1)+TextUtils.isEmpty(str2));
         CommonActivity.this.getApplication();

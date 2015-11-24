@@ -72,4 +72,44 @@
 	    android:layout_height="wrap_content"
 	    android:id="@+id/btn_flag"
 	    android:layout_below="@id/id4"/>
+	<EditText
+		android:id="@+id/e1"
+		android:inputType="none"
+		android:layout_below="@id/btn_flag"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="none"
+		/>
+	<EditText
+		android:id="@+id/e2"
+		android:inputType="text"
+		android:layout_below="@id/e1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="text"
+		/>
+	<EditText
+		android:id="@+id/e3"
+		android:inputType="textUri"
+		android:layout_below="@id/e2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="textUri"
+		/>
+	<EditText
+		android:id="@+id/e4"
+		android:inputType="textNoSuggestions"
+		android:layout_below="@id/e3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="textNoSuggestions"
+		/>
+	<EditText
+		android:id="@+id/e5"
+		android:inputType="textWebEditText"
+		android:layout_below="@id/e4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="textWebEditText"
+		/>
 </RelativeLayout>

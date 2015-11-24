@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
+import android.media.CamcorderProfile;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Environment;
@@ -21,6 +22,7 @@ import com.example.androidtest.R;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.List;
 
 //@SuppressLint(SimpleDateFormat)
 public class MovieRecorderActivity2 extends Activity implements Callback {
@@ -88,20 +90,23 @@ public class MovieRecorderActivity2 extends Activity implements Callback {
                                 .setAudioSource(MediaRecorder.AudioSource.MIC);// 这两项需要放在setOutputFormat之前
                         mRecorder
                                 .setVideoSource(MediaRecorder.VideoSource.CAMERA);// 设置录制视频源为Camera(相机)
-                        mRecorder.setOrientationHint(90+180); //back:90 front:270
+                        mRecorder.setOrientationHint(90); //back:90 front:270
+                        mRecorder.setProfile(CamcorderProfile
+                                .get(CamcorderProfile.QUALITY_HIGH));
                         // Set output file format
-                        mRecorder
-                                .setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);// 设置录制完成后视频的封装格式THREE_GPP为3gp.MPEG_4为mp4
+//                        mRecorder
+//                                .setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);// 设置录制完成后视频的封装格式THREE_GPP为3gp.MPEG_4为mp4
 
                         // 这两项需要放在setOutputFormat之后
-                        mRecorder
-                                .setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
-                        mRecorder
-                                .setVideoEncoder(MediaRecorder.VideoEncoder.H264);// 设置录制的视频编码h263
+//                        mRecorder
+//                                .setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+//                        mRecorder
+//                                .setVideoEncoder(MediaRecorder.VideoEncoder.H264);// 设置录制的视频编码h263
+                       // List<Camera.Size> sizes=camera.getParameters().getSupportedVideoSizes();
 
-                        mRecorder.setVideoSize(1280, 720);// 设置视频录制的分辨率。必须放在设置编码和格式的后面，否则报错
-                        mRecorder.setVideoFrameRate(20);// 设置录制的视频帧率。必须放在设置编码和格式的后面，否则报错
-                        mRecorder.setVideoEncodingBitRate(8*1024*1024);
+                        //mRecorder.setVideoSize(800, 480);// 设置视频录制的分辨率。必须放在设置编码和格式的后面，否则报错
+                       // mRecorder.setVideoFrameRate(20);// 设置录制的视频帧率。必须放在设置编码和格式的后面，否则报错
+                       // mRecorder.setVideoEncodingBitRate(1024*1024);
                         mRecorder.setMaxDuration(8000);// 设置最大的录制时间
                         mRecorder.setPreviewDisplay(mSurfaceHolder.getSurface());
 
@@ -211,7 +216,7 @@ public class MovieRecorderActivity2 extends Activity implements Callback {
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width,
                                int height) {
-        camera = Camera.open(1); // 获取Camera实例
+        camera = Camera.open(0); // 获取Camera实例
         try {
             camera.setPreviewDisplay(holder);
             mSurfaceview.setLayoutParams(new RelativeLayout.LayoutParams(width,
@@ -220,7 +225,7 @@ public class MovieRecorderActivity2 extends Activity implements Callback {
             // 如果出现异常，则释放Camera对象
             camera.release();
         }
-        camera.setDisplayOrientation(90);// 设置预览视频时时竖屏
+        camera.setDisplayOrientation(90);// 设置预览视频时竖屏
         // 启动预览功能
         camera.startPreview();
         // 将holder，这个holder为开始在onCreate里面取得的holder，将它赋给mSurfaceHolder
@@ -249,5 +254,11 @@ public class MovieRecorderActivity2 extends Activity implements Callback {
             camera.release();
             camera = null;
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        System.exit(0);
     }
 }

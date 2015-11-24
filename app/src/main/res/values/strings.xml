@@ -24,5 +24,6 @@
     <string name="title_activity_view_drag_helper_test">ViewDragHelperTestActivity</string>
     <string name="title_activity_movie_recorder">MovieRecorderActivity</string>
     <string name="title_activity_movie_recorder_activity2">MovieRecorderActivity2</string>
+    <string name="title_activity_socket">SocketActivity</string>
 
 </resources>

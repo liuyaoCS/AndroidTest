@@ -13,6 +13,7 @@ import com.example.experience.MovieRecorderActivity2;
 import com.example.experience.MyActivity;
 import com.example.experience.NetActivity;
 import com.example.experience.ResourceActivity;
+import com.example.experience.SocketActivity;
 import com.example.experience.ViewDragHelperTestActivity;
 import com.example.experience.ViewTestActivity;
 import com.umeng.analytics.MobclickAgent;
@@ -82,6 +83,7 @@ public class MainActivity extends Activity{
 				new Item("js",JSActivity.class),
 				new Item("async",AsyncActivity.class),
 				new Item("eventBus",EventBusActivity.class),
+				new Item("socket",SocketActivity.class),
 				new Item("umShare",UmShareActivity.class),
 				new Item("net",NetActivity.class),
 				/*new Item("webview",WebViewActivity.class),new Item("webview2",WebView2Activity.class),new Item("webviewcache",WebViewCacheActivity.class),*/
