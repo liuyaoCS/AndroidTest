@@ -14,6 +14,7 @@ import com.example.experience.MyActivity;
 import com.example.experience.NetActivity;
 import com.example.experience.ResourceActivity;
 import com.example.experience.SocketActivity;
+import com.example.experience.VideoViewActivity;
 import com.example.experience.ViewDragHelperTestActivity;
 import com.example.experience.ViewTestActivity;
 import com.umeng.analytics.MobclickAgent;
@@ -98,6 +99,7 @@ public class MainActivity extends Activity{
 				new Item("record",MovieRecorderActivity.class),
 				new Item("record2",MovieRecorderActivity2.class),
 				new Item("video",VideoActivity.class),
+				new Item("videoview-rtsp",VideoViewActivity.class),
 				new Item("shader",ShaderActivity.class),new Item("wave",WaveActivity.class),
 				new Item("iqiyi",IqiyiMainActivity.class),
 				new Item("58",FiveEightActivity.class),
