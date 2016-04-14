@@ -4,8 +4,8 @@ package com.example.view;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.example.activity.OtherActivity;
-import com.example.activity.FiveEightActivity;
+import com.example.activity.test.OtherActivity;
+import com.example.activity.test.FiveEightActivity;
 import com.example.androidtest.R;
 import com.example.helper.Constants;
 
@@ -26,22 +26,20 @@ import android.graphics.Paint.Style;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.Region.Op;
 import android.graphics.drawable.Drawable;
-import android.os.Handler;
 import android.support.v4.view.GestureDetectorCompat;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.animation.LinearInterpolator;
-import android.widget.Scroller;
+
 /**
  * 
  * @author ly hyz
  *
  */
 public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback{
-	public static String TAG ="test";
+	public static String TAG ="test1";
 	private SurfaceHolder holder;
 	MyThread thread;
 	Context mcontext;

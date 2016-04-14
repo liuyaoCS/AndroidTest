@@ -3,22 +3,39 @@ package com.example.activity;
 
 import cn.jpush.android.api.JPushInterface;
 
+import com.example.activity.test.Animation2Activity;
+import com.example.activity.test.Animation3Activity;
+import com.example.activity.test.AnimationActivity;
+import com.example.activity.test.EventBusActivity;
+import com.example.activity.test.FiveEightActivity;
+import com.example.activity.test.GifActivity;
+import com.example.activity.test.IqiyiMainActivity;
+import com.example.activity.test.JSActivity;
+import com.example.activity.test.MyViewActivity;
+import com.example.activity.test.PathMenuMainActivity;
+import com.example.activity.test.PullLayoutActivity;
+import com.example.activity.test.PullRefreshMainActivity;
+import com.example.activity.test.ScrollerActivity;
+import com.example.activity.test.ShaderActivity;
+import com.example.activity.test.SurfaceActivity;
+import com.example.activity.test.VideoActivity;
+import com.example.activity.test.ViewScrollActivity;
+import com.example.activity.test.WaveActivity;
 import com.example.androidtest.R;
-import com.example.experience.AdapterActivity;
-import com.example.experience.AsyncActivity;
-import com.example.experience.DraggerViewActivity;
-import com.example.experience.FragmentTestActivity;
-import com.example.experience.MovieRecorderActivity;
-import com.example.experience.MovieRecorderActivity2;
-import com.example.experience.MyActivity;
-import com.example.experience.NetActivity;
-import com.example.experience.ResourceActivity;
-import com.example.experience.SocketActivity;
-import com.example.experience.VideoViewActivity;
-import com.example.experience.ViewDragHelperTestActivity;
-import com.example.experience.ViewTestActivity;
-import com.umeng.analytics.MobclickAgent;
-import com.umeng.update.UmengUpdateAgent;
+import com.example.activity.experience.AdapterActivity;
+import com.example.activity.experience.AsyncActivity;
+import com.example.activity.experience.DraggerViewActivity;
+import com.example.activity.experience.FragmentTestActivity;
+import com.example.activity.experience.MovieRecorderActivity;
+import com.example.activity.experience.MovieRecorderActivity2;
+import com.example.activity.experience.MyActivity;
+import com.example.activity.experience.NetActivity;
+import com.example.activity.experience.ResourceActivity;
+import com.example.activity.experience.SocketActivity;
+import com.example.activity.experience.VideoViewActivity;
+import com.example.activity.experience.ViewDragHelperTestActivity;
+import com.example.activity.experience.ViewTestActivity;
+
 
 import android.app.Activity;
 import android.content.Intent;
@@ -43,7 +60,6 @@ public class MainActivity extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		this.setContentView(R.layout.activity_main);
-		UmengUpdateAgent.update(this);
 		init();
 
 		
@@ -54,7 +70,6 @@ public class MainActivity extends Activity{
 		// TODO Auto-generated method stub
 		super.onResume();
 		JPushInterface.onResume(this);
-		MobclickAgent.onResume(this);
 	}
 	
 
@@ -63,7 +78,6 @@ public class MainActivity extends Activity{
 		// TODO Auto-generated method stub
 		super.onPause();
 		JPushInterface.onPause(this);
-		MobclickAgent.onPause(this);
 	}
 
 	private void init(){
@@ -76,16 +90,15 @@ public class MainActivity extends Activity{
 		tvHint.startAnimation(ani);
 		
 		datasets=new Item[]{
+				new Item("common",CommonTestActivity.class),
 				new Item("组件",MyActivity.class),
 				new Item("fragment",FragmentTestActivity.class),
 				new Item("resource",ResourceActivity.class),
 				new Item("adapter",AdapterActivity.class),
-				new Item("common",CommonActivity.class),
 				new Item("js",JSActivity.class),
 				new Item("async",AsyncActivity.class),
 				new Item("eventBus",EventBusActivity.class),
 				new Item("socket",SocketActivity.class),
-				new Item("umShare",UmShareActivity.class),
 				new Item("net",NetActivity.class),
 				/*new Item("webview",WebViewActivity.class),new Item("webview2",WebView2Activity.class),new Item("webviewcache",WebViewCacheActivity.class),*/
 				new Item("animation",AnimationActivity.class),new Item("animation2",Animation2Activity.class),new Item("animation3",Animation3Activity.class),
