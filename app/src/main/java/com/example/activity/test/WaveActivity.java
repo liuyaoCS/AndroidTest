@@ -1,7 +1,7 @@
 package com.example.activity.test;
 
 import com.example.androidtest.R;
-import com.example.control.Wave;
+import com.example.view.Wave;
 import com.example.view.WaveTextView;
 
 import android.app.Activity;

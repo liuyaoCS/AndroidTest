@@ -1,11 +1,10 @@
-package com.example.gif;
-
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
+package com.menglvren.androidref.gif;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
-import android.util.Log;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 
 public class GifDecoder extends Thread{
 

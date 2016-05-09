@@ -1,8 +1,8 @@
 package com.example.activity.test;
 
 import com.example.androidtest.R;
-import com.example.gif.GifView;
-import com.example.gif.GifView.GifImageType;
+import com.menglvren.androidref.gif.GifView;
+
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -28,7 +28,7 @@ public class GifActivity extends Activity {
 		
 		gf1 = (GifView)findViewById(R.id.gif1);
 		gf1.setGifImage(R.drawable.animation);
-		gf1.setGifImageType(GifImageType.COVER);
+		gf1.setGifImageType(GifView.GifImageType.COVER);
 		
 		gf2 = (GifView)findViewById(R.id.gif2);
 //		gf2.setGifImageType(GifImageType.COVER);

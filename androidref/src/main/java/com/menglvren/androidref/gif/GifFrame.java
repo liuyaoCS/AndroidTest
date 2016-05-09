@@ -1,4 +1,4 @@
-package com.example.gif;
+package com.menglvren.androidref.gif;
 
 import android.graphics.Bitmap;
 

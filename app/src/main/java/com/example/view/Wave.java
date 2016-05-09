@@ -1,4 +1,4 @@
-package com.example.control;
+package com.example.view;
 
 import com.example.view.WaveTextView;
 

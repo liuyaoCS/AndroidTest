@@ -86,7 +86,7 @@ public final class EventBus {
      * the thread local event queue, every single thread has it's own queue.
      */
     ThreadLocal<Queue<EventType>> mLocalEvents = new ThreadLocal<Queue<EventType>>() {
-        protected java.util.Queue<EventType> initialValue() {
+        protected Queue<EventType> initialValue() {
             return new ConcurrentLinkedQueue<EventType>();
         };
     };
@@ -117,7 +117,7 @@ public final class EventBus {
     /**
      * constructor with desc
      * 
-     * @param desc the descriptor of eventbus
+     * @param desc the descriptor of org.simple.eventbus
      */
     public EventBus(String desc) {
         mDesc = desc;

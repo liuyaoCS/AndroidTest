@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.example.androidtest.R;
-import com.example.control.MyAnimations;
+import com.example.view.MyAnimations;
 
 /**
  * 淘宝菜单2 的主页面

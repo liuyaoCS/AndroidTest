@@ -27,4 +27,9 @@ dependencies {
     compile 'com.google.code.gson:gson:2.2.4'
     compile files('libs/jpush-sdk-release1.7.5.jar')
     compile files('libs/retrofit-1.9.0.jar')
+    compile files('libs/tbs_sdk_v1.5.1.1057_25436_obfs_20160331_144900.jar')
+    compile project(':androidref')
+
+    compile files('libs/classes_dex2jar.jar')
+    compile files('libs/classes2_dex2jar.jar')
 }

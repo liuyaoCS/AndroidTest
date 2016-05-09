@@ -1,6 +1,4 @@
-package com.example.gif;
-
-import java.io.InputStream;
+package com.menglvren.androidref.gif;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -13,6 +11,8 @@ import android.os.SystemClock;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+
+import java.io.InputStream;
 
 /**
  * GifView<br>

@@ -1,4 +1,4 @@
-package com.example.control;
+package com.example.view;
 import android.content.Context;
 import android.view.ViewGroup;
 import android.view.ViewGroup.MarginLayoutParams;
