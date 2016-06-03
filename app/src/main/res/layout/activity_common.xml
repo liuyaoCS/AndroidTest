@@ -1,21 +1,29 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+	android:background="#00ff00"
+	android:orientation="vertical"
      >
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/pic">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="10dp"
+			android:background="#ff00ff">
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="400dp"
 
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		android:id="@+id/container"
-		android:orientation="vertical"
+				android:src="@drawable/ic_launcher"/>
+		</RelativeLayout>
+	</FrameLayout>
+	<TextView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="#505050">
-		<Button
-			android:layout_width="55dp"
-			android:layout_height="55dp"
-			android:id="@+id/refresh"
-			android:text="refresh"/>
+		android:text="sssss"
+		/>
 
-	</LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>

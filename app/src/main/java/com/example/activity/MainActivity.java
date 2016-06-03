@@ -3,6 +3,9 @@ package com.example.activity;
 
 import cn.jpush.android.api.JPushInterface;
 
+import com.example.activity.support.ActionbarActivity;
+import com.example.activity.support.CardViewActivity;
+import com.example.activity.support.SwipeRefreshLayoutActivity;
 import com.example.activity.test.Animation2Activity;
 import com.example.activity.test.Animation3Activity;
 import com.example.activity.test.AnimationActivity;
@@ -118,7 +121,11 @@ public class MainActivity extends Activity{
 				new Item("58",FiveEightActivity.class),
 				new Item("pathmenu",PathMenuMainActivity.class),
 				new Item("pulllayout",PullLayoutActivity.class),
-				new Item("pullrefresh",PullRefreshMainActivity.class)};
+				new Item("pullrefresh",PullRefreshMainActivity.class),
+				new Item("ActionbarActivity",ActionbarActivity.class),
+				new Item("SwipeRefreshLayoutActivity",SwipeRefreshLayoutActivity.class),
+				new Item("CardViewActivity", CardViewActivity.class)
+				};
 		
 		list=(ListView) findViewById(R.id.list);
 		list.setAdapter(new BaseAdapter(){
