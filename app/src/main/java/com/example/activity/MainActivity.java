@@ -3,6 +3,8 @@ package com.example.activity;
 
 import cn.jpush.android.api.JPushInterface;
 
+import com.example.activity.experience.Permission2Activity;
+import com.example.activity.experience.PermissionActivity;
 import com.example.activity.support.ActionbarActivity;
 import com.example.activity.support.CardViewActivity;
 import com.example.activity.support.SwipeRefreshLayoutActivity;
@@ -96,6 +98,8 @@ public class MainActivity extends Activity{
 				new Item("common",CommonTestActivity.class),
 				new Item("组件",MyActivity.class),
 				new Item("fragment",FragmentTestActivity.class),
+				new Item("permission",PermissionActivity.class),
+				new Item("permission2",Permission2Activity.class),
 				new Item("resource",ResourceActivity.class),
 				new Item("adapter",AdapterActivity.class),
 				new Item("js",JSActivity.class),

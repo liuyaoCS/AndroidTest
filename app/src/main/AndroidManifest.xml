@@ -42,6 +42,7 @@
 
     <uses-permission android:name="android.permission.SET_DEBUG_APP" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
@@ -271,7 +272,10 @@
             android:name="com.example.activity.support.ActionbarActivity"
             android:theme="@style/Theme.AppCompat.Light" />
         <activity android:name="com.example.activity.support.SwipeRefreshLayoutActivity" />
-        <activity android:name="com.example.activity.support.CardViewActivity"></activity>
+        <activity android:name="com.example.activity.support.CardViewActivity" />
+        <activity android:name="com.example.activity.experience.PermissionActivity" />
+        <activity android:name="com.example.activity.experience.Permission2Activity"
+            android:theme="@style/Base.Theme.AppCompat"></activity>
     </application>
 
 </manifest>
