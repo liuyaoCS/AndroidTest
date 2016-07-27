@@ -4,8 +4,8 @@ package com.example.view;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.example.activity.test.OtherActivity;
-import com.example.activity.test.FiveEightActivity;
+import com.example.activity.function.OtherActivity;
+import com.example.activity.view.FiveEightActivity;
 import com.example.androidtest.R;
 import com.example.helper.Constants;
 

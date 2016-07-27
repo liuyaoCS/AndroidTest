@@ -3,43 +3,44 @@ package com.example.activity;
 
 import cn.jpush.android.api.JPushInterface;
 
-import com.example.activity.experience.Permission2Activity;
-import com.example.activity.experience.PermissionActivity;
+import com.example.activity.function.Permission2Activity;
+import com.example.activity.function.PermissionActivity;
+import com.example.activity.function.WebViewUploadFileActivity;
 import com.example.activity.support.ActionbarActivity;
 import com.example.activity.support.CardViewActivity;
 import com.example.activity.support.SwipeRefreshLayoutActivity;
-import com.example.activity.test.Animation2Activity;
-import com.example.activity.test.Animation3Activity;
-import com.example.activity.test.AnimationActivity;
-import com.example.activity.test.EventBusActivity;
-import com.example.activity.test.FiveEightActivity;
-import com.example.activity.test.GifActivity;
-import com.example.activity.test.IqiyiMainActivity;
-import com.example.activity.test.JSActivity;
-import com.example.activity.test.MyViewActivity;
-import com.example.activity.test.PathMenuMainActivity;
-import com.example.activity.test.PullLayoutActivity;
-import com.example.activity.test.PullRefreshMainActivity;
-import com.example.activity.test.ScrollerActivity;
-import com.example.activity.test.ShaderActivity;
-import com.example.activity.test.SurfaceActivity;
-import com.example.activity.test.VideoActivity;
-import com.example.activity.test.ViewScrollActivity;
-import com.example.activity.test.WaveActivity;
+import com.example.activity.view.Animation2Activity;
+import com.example.activity.view.Animation3Activity;
+import com.example.activity.view.AnimationActivity;
+import com.example.activity.view.EventBusActivity;
+import com.example.activity.view.FiveEightActivity;
+import com.example.activity.view.GifActivity;
+import com.example.activity.view.IqiyiMainActivity;
+import com.example.activity.function.JSActivity;
+import com.example.activity.view.MyViewActivity;
+import com.example.activity.view.PathMenuMainActivity;
+import com.example.activity.view.PullLayoutActivity;
+import com.example.activity.view.PullRefreshMainActivity;
+import com.example.activity.view.ScrollerActivity;
+import com.example.activity.view.ShaderActivity;
+import com.example.activity.view.SurfaceActivity;
+import com.example.activity.view.VideoActivity;
+import com.example.activity.view.ViewScrollActivity;
+import com.example.activity.view.WaveActivity;
 import com.example.androidtest.R;
-import com.example.activity.experience.AdapterActivity;
-import com.example.activity.experience.AsyncActivity;
-import com.example.activity.experience.DraggerViewActivity;
-import com.example.activity.experience.FragmentTestActivity;
-import com.example.activity.experience.MovieRecorderActivity;
-import com.example.activity.experience.MovieRecorderActivity2;
-import com.example.activity.experience.MyActivity;
-import com.example.activity.experience.NetActivity;
-import com.example.activity.experience.ResourceActivity;
-import com.example.activity.experience.SocketActivity;
-import com.example.activity.experience.VideoViewActivity;
-import com.example.activity.experience.ViewDragHelperTestActivity;
-import com.example.activity.experience.ViewTestActivity;
+import com.example.activity.function.AdapterActivity;
+import com.example.activity.function.AsyncActivity;
+import com.example.activity.function.DraggerViewActivity;
+import com.example.activity.function.FragmentTestActivity;
+import com.example.activity.view.MovieRecorderActivity;
+import com.example.activity.view.MovieRecorderActivity2;
+import com.example.activity.function.MyActivity;
+import com.example.activity.function.NetActivity;
+import com.example.activity.function.ResourceActivity;
+import com.example.activity.function.SocketActivity;
+import com.example.activity.view.VideoViewActivity;
+import com.example.activity.view.ViewDragHelperTestActivity;
+import com.example.activity.view.ViewTestActivity;
 
 
 import android.app.Activity;
@@ -66,8 +67,6 @@ public class MainActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		this.setContentView(R.layout.activity_main);
 		init();
-
-		
 	}
 	
 	@Override
@@ -98,11 +97,12 @@ public class MainActivity extends Activity{
 				new Item("common",CommonTestActivity.class),
 				new Item("组件",MyActivity.class),
 				new Item("fragment",FragmentTestActivity.class),
+				new Item("resource",ResourceActivity.class),
 				new Item("permission",PermissionActivity.class),
 				new Item("permission2",Permission2Activity.class),
-				new Item("resource",ResourceActivity.class),
-				new Item("adapter",AdapterActivity.class),
 				new Item("js",JSActivity.class),
+				new Item("WebViewUploadFileActivity",WebViewUploadFileActivity.class),
+				new Item("adapter",AdapterActivity.class),
 				new Item("async",AsyncActivity.class),
 				new Item("eventBus",EventBusActivity.class),
 				new Item("socket",SocketActivity.class),

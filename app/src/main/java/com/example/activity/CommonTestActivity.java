@@ -48,7 +48,7 @@ public class CommonTestActivity extends Activity {
 		unifySetting.setUseWideViewPort(true);
 		unifySetting.setNewUserAgentString();
 
-		web.loadUrl("http://192.168.65.30/viewport/test.html");
+		web.loadUrl("http://192.168.66.20/geo/test.html");
 
 		Button size=(Button)findViewById(R.id.btn);
 		size.setOnClickListener(new View.OnClickListener() {

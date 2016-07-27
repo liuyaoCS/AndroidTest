@@ -23,7 +23,7 @@ public class MyWebSetting {
         webSetting.setGeolocationEnabled(true);
         webSetting.setDatabaseEnabled(true);
         webSetting.setJavaScriptEnabled(true);
-        webSetting.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);//设置缓存
+        webSetting.setCacheMode(WebSettings.LOAD_NO_CACHE);//设置缓存
         webSetting.setSavePassword(false);
     }
 

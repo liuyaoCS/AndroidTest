@@ -21,7 +21,6 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="android.permission.GET_TASKS" />
@@ -69,11 +68,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.activity.test.AnimationActivity"
+            android:name="com.example.activity.view.AnimationActivity"
             android:hardwareAccelerated="false"
             android:label="@string/title_activity_show_view" />
         <activity
-            android:name="com.example.activity.test.ScrollerActivity"
+            android:name="com.example.activity.view.ScrollerActivity"
             android:label="title_activity_scroller" />
         <activity
             android:name="com.example.activity.CommonTestActivity"
@@ -92,51 +91,51 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.activity.test.MyViewActivity"
+            android:name="com.example.activity.view.MyViewActivity"
             android:label="title_activity_my_view" />
         <activity
-            android:name="com.example.activity.test.SurfaceActivity"
+            android:name="com.example.activity.view.SurfaceActivity"
             android:label="title_activity_surface" />
         <activity
-            android:name="com.example.activity.test.Animation2Activity"
+            android:name="com.example.activity.view.Animation2Activity"
             android:label="title_activity_animation2" />
         <activity
-            android:name="com.example.activity.test.ShaderActivity"
+            android:name="com.example.activity.view.ShaderActivity"
             android:label="title_activity_shader" />
         <activity
-            android:name="com.example.activity.test.WaveActivity"
+            android:name="com.example.activity.view.WaveActivity"
             android:label="title_activity_wave" />
-        <activity android:name="com.example.activity.test.IqiyiMainActivity" />
-        <activity android:name="com.example.activity.test.FiveEightActivity" />
-        <activity android:name="com.example.activity.test.OtherActivity" />
-        <activity android:name="com.example.activity.test.PathMenuMainActivity" />
-        <activity android:name="com.example.activity.test.PullRefreshMainActivity" />
-        <activity android:name="com.example.activity.test.GifActivity" />
+        <activity android:name="com.example.activity.view.IqiyiMainActivity" />
+        <activity android:name="com.example.activity.view.FiveEightActivity" />
+        <activity android:name="com.example.activity.function.OtherActivity" />
+        <activity android:name="com.example.activity.view.PathMenuMainActivity" />
+        <activity android:name="com.example.activity.view.PullRefreshMainActivity" />
+        <activity android:name="com.example.activity.view.GifActivity" />
         <activity
-            android:name="com.example.activity.test.VideoActivity"
+            android:name="com.example.activity.view.VideoActivity"
             android:label="title_activity_video" />
         <activity
-            android:name="com.example.activity.test.JSActivity"
+            android:name="com.example.activity.function.JSActivity"
             android:label="title_activity_js" />
         <activity
-            android:name="com.example.activity.test.PullLayoutActivity"
+            android:name="com.example.activity.view.PullLayoutActivity"
             android:label="title_activity_pull_layout" />
         <activity
-            android:name="com.example.activity.test.ViewScrollActivity"
+            android:name="com.example.activity.view.ViewScrollActivity"
             android:label="title_activity_view_scroll"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
-            android:name="com.example.activity.test.EventBusActivity"
+            android:name="com.example.activity.view.EventBusActivity"
             android:label="title_activity_event_bus" />
 
         <service
-            android:name="com.example.activity.experience.MyServiceCommon"
+            android:name="com.example.service.MyServiceCommon"
             android:enabled="true" />
         <service
-            android:name="com.example.activity.experience.MyServiceBind"
+            android:name="com.example.service.MyServiceBind"
             android:enabled="true" />
         <service
-            android:name="com.example.activity.experience.MyIntentService"
+            android:name="com.example.service.MyIntentService"
             android:enabled="true" />
         <!-- jpush -->
         <service
@@ -207,15 +206,15 @@
             android:value="chinasoweb" />
 
         <activity
-            android:name="com.example.activity.test.Animation3Activity"
+            android:name="com.example.activity.view.Animation3Activity"
             android:label="@string/title_activity_animation3" />
         <activity
-            android:name="com.example.activity.experience.MyActivity"
+            android:name="com.example.activity.function.MyActivity"
             android:configChanges="screenSize"
             android:label="@string/title_activity_my" />
 
         <receiver
-            android:name="com.example.activity.experience.MyReceiver"
+            android:name="com.example.receiver.MyReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -224,58 +223,60 @@
         </receiver>
 
         <activity
-            android:name="com.example.activity.experience.ContentProviderActivity"
+            android:name="com.example.activity.function.ContentProviderActivity"
             android:label="@string/title_activity_content_provider" />
 
         <provider
-            android:name="com.example.activity.experience.MyContentProvider"
+            android:name="com.example.provider.MyContentProvider"
             android:authorities="com.example.androidTest"
             android:enabled="true"
             android:exported="true" />
 
         <activity
-            android:name="com.example.activity.experience.FragmentTestActivity"
+            android:name="com.example.activity.function.FragmentTestActivity"
             android:label="@string/title_activity_fragment_test" />
         <activity
-            android:name="com.example.activity.experience.AdapterActivity"
+            android:name="com.example.activity.function.AdapterActivity"
             android:label="@string/title_activity_adapter" />
         <activity
-            android:name="com.example.activity.experience.AsyncActivity"
+            android:name="com.example.activity.function.AsyncActivity"
             android:label="@string/title_activity_async" />
         <activity
-            android:name="com.example.activity.experience.NetActivity"
+            android:name="com.example.activity.function.NetActivity"
             android:label="@string/title_activity_net" />
         <activity
-            android:name="com.example.activity.experience.ViewTestActivity"
+            android:name="com.example.activity.view.ViewTestActivity"
             android:label="@string/title_activity_view_test" />
         <activity
-            android:name="com.example.activity.experience.DraggerViewActivity"
+            android:name="com.example.activity.function.DraggerViewActivity"
             android:hardwareAccelerated="false"
             android:label="@string/title_activity_dragger_view" />
         <activity
-            android:name="com.example.activity.experience.ViewDragHelperTestActivity"
+            android:name="com.example.activity.view.ViewDragHelperTestActivity"
             android:label="@string/title_activity_view_drag_helper_test" />
         <activity
-            android:name="com.example.activity.experience.MovieRecorderActivity"
+            android:name="com.example.activity.view.MovieRecorderActivity"
             android:label="@string/title_activity_movie_recorder"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.activity.experience.MovieRecorderActivity2"
+            android:name="com.example.activity.view.MovieRecorderActivity2"
             android:label="@string/title_activity_movie_recorder_activity2" />
         <activity
-            android:name="com.example.activity.experience.SocketActivity"
+            android:name="com.example.activity.function.SocketActivity"
             android:label="@string/title_activity_socket" />
         <activity
-            android:name="com.example.activity.experience.VideoViewActivity"
+            android:name="com.example.activity.view.VideoViewActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.activity.support.ActionbarActivity"
             android:theme="@style/Theme.AppCompat.Light" />
         <activity android:name="com.example.activity.support.SwipeRefreshLayoutActivity" />
         <activity android:name="com.example.activity.support.CardViewActivity" />
-        <activity android:name="com.example.activity.experience.PermissionActivity" />
-        <activity android:name="com.example.activity.experience.Permission2Activity"
-            android:theme="@style/Base.Theme.AppCompat"></activity>
+        <activity android:name="com.example.activity.function.PermissionActivity" />
+        <activity
+            android:name="com.example.activity.function.Permission2Activity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="com.example.activity.function.WebViewUploadFileActivity"></activity>
     </application>
 
 </manifest>
