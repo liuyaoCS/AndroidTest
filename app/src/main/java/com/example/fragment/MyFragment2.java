@@ -15,7 +15,7 @@ public class MyFragment2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the item_adapter_layout for this fragment
         Log.i("ly","onCreateView");
         return inflater.inflate(R.layout.fragment_blank2, container, false);
     }

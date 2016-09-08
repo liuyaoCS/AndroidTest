@@ -57,7 +57,7 @@ public class NavView extends ViewGroup{
 																															//因为gone不是影响的measure而是layout里面的setFrame
 //			for(int j=0;j<((ViewGroup) child).getChildCount();j++){
 //				View child_child=((ViewGroup)child).getChildAt(0);
-//				child_child.layout(0, 0, child_child.getMeasuredWidth(), child_child.getMeasuredHeight());					//注意这四个参数都是相对父view的			
+//				child_child.item_adapter_layout(0, 0, child_child.getMeasuredWidth(), child_child.getMeasuredHeight());					//注意这四个参数都是相对父view的
 //			}		
 
 			tt+=child.getMeasuredHeight();

@@ -203,7 +203,7 @@
             android:value="55a89d7567e58e9b5c000635" />
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="chinasoweb" />
+            android:value="UMENG_CHANNEL_VALUE" />
 
         <activity
             android:name="com.example.activity.view.Animation3Activity"
@@ -276,7 +276,8 @@
         <activity
             android:name="com.example.activity.function.Permission2Activity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name="com.example.activity.function.WebViewUploadFileActivity"></activity>
+        <activity android:name="com.example.activity.function.WebViewUploadFileActivity" />
+        <activity android:name="com.example.activity.function.ButterKnifeTestActivity"></activity>
     </application>
 
 </manifest>

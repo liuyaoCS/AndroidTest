@@ -71,12 +71,12 @@ public class AnimationActivity extends Activity {
 				Log.i("ly", "dp width "+DisplayUtil.Px2Dp(AnimationActivity.this, pic.getWidth())+", height "+DisplayUtil.Px2Dp(AnimationActivity.this,pic.getHeight()));
 				DisplayUtil.show(AnimationActivity.this);
 				
-				//pic.layout(100, pic.getTop(), 100+pic.getWidth(), pic.getBottom());
-//				layout.removeView(pic);
-//				layout.addView(pic, 0);
+				//pic.item_adapter_layout(100, pic.getTop(), 100+pic.getWidth(), pic.getBottom());
+//				item_adapter_layout.removeView(pic);
+//				item_adapter_layout.addView(pic, 0);
 				
 //				count++;
-//				pic.layout(100*count, pic.getTop(), 100*count+pic.getWidth(), pic.getBottom());
+//				pic.item_adapter_layout(100*count, pic.getTop(), 100*count+pic.getWidth(), pic.getBottom());
 				pic.startAnimation(set);
 			}};
 		

@@ -71,7 +71,7 @@ public class ScrollerActivity extends Activity {
 		        //因为调用computeScroll函数的是MyLinearLayout实例，    
 		    	//所以调用scrollTo移动的将是该实例的孩子，也就是MyButton实例    
 		        scrollTo(mScroller.getCurrX(), mScroller.getCurrY());  //view里的方法.duration时间内持续调用，也可用如下的layout代替，但是方向正好相反
-		        //btn1.layout(mScroller.getCurrX(), btn1.getTop(), mScroller.getCurrX()+btn1.getWidth(), btn1.getBottom());
+		        //btn1.item_adapter_layout(mScroller.getCurrX(), btn1.getTop(), mScroller.getCurrX()+btn1.getWidth(), btn1.getBottom());
 		        
 		       // Log.i("ly", "getCurrX = " +  mScroller.getCurrX());    
 		    

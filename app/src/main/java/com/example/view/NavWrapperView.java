@@ -62,7 +62,7 @@ public class NavWrapperView extends LinearLayout{
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         super.onLayout(changed, l, t, r, b);
-       // Log.i("ly","layout...");
+       // Log.i("ly","item_adapter_layout...");
     }
 
     public void init(List<NewColumnItem> columns, int lineLimit){
