@@ -4,6 +4,7 @@ package com.example.activity;
 import cn.jpush.android.api.JPushInterface;
 
 import com.example.activity.function.ButterKnifeTestActivity;
+import com.example.activity.function.DataBindingTestActivity;
 import com.example.activity.function.Permission2Activity;
 import com.example.activity.function.PermissionActivity;
 import com.example.activity.function.WebViewUploadFileActivity;
@@ -107,6 +108,7 @@ public class MainActivity extends Activity{
 				new Item("socket",SocketActivity.class),
 				new Item("net",NetActivity.class),
 				new Item("ButterKnifeTestActivity",ButterKnifeTestActivity.class),
+				new Item("DataBindingTestActivity",DataBindingTestActivity.class),
 				/*new Item("webview",WebViewActivity.class),new Item("webview2",WebView2Activity.class),new Item("webviewcache",WebViewCacheActivity.class),*/
 				new Item("animation",AnimationActivity.class),new Item("animation2",Animation2Activity.class),new Item("animation3",Animation3Activity.class),
 				new Item("scroller",ScrollerActivity.class),new Item("ViewScroll",ViewScrollActivity.class),

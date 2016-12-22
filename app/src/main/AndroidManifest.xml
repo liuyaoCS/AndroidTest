@@ -277,7 +277,8 @@
             android:name="com.example.activity.function.Permission2Activity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name="com.example.activity.function.WebViewUploadFileActivity" />
-        <activity android:name="com.example.activity.function.ButterKnifeTestActivity"></activity>
+        <activity android:name="com.example.activity.function.ButterKnifeTestActivity" />
+        <activity android:name="com.example.activity.function.DataBindingTestActivity"></activity>
     </application>
 
 </manifest>
