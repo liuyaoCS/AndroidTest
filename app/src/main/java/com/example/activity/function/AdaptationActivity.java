@@ -8,7 +8,7 @@ import android.view.Display;
 
 import com.example.androidtest.R;
 
-public class AdapterActivity extends Activity {
+public class AdaptationActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

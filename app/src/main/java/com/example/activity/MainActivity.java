@@ -5,6 +5,7 @@ import cn.jpush.android.api.JPushInterface;
 
 import com.example.activity.function.ButterKnifeTestActivity;
 import com.example.activity.function.DataBindingTestActivity;
+import com.example.activity.function.GreenDAOActivity;
 import com.example.activity.function.Permission2Activity;
 import com.example.activity.function.PermissionActivity;
 import com.example.activity.function.WebViewUploadFileActivity;
@@ -30,7 +31,7 @@ import com.example.activity.view.VideoActivity;
 import com.example.activity.view.ViewScrollActivity;
 import com.example.activity.view.WaveActivity;
 import com.example.androidtest.R;
-import com.example.activity.function.AdapterActivity;
+import com.example.activity.function.AdaptationActivity;
 import com.example.activity.function.AsyncActivity;
 import com.example.activity.function.DraggerViewActivity;
 import com.example.activity.function.FragmentTestActivity;
@@ -98,18 +99,21 @@ public class MainActivity extends Activity{
 				new Item("common",CommonTestActivity.class),
 				new Item("fragment",FragmentTestActivity.class),
 				new Item("resource",ResourceActivity.class),
+				new Item("Adaptation",AdaptationActivity.class),
 				new Item("permission",PermissionActivity.class),
 				new Item("permission2",Permission2Activity.class),
+				/*net test*/
 				new Item("js",JSActivity.class),
 				new Item("WebViewUploadFileActivity",WebViewUploadFileActivity.class),
-				new Item("adapter",AdapterActivity.class),
 				new Item("async",AsyncActivity.class),
 				new Item("eventBus",EventBusActivity.class),
 				new Item("socket",SocketActivity.class),
 				new Item("net",NetActivity.class),
+				/*data test*/
+				new Item("GreenDAOActivity",GreenDAOActivity.class),
 				new Item("ButterKnifeTestActivity",ButterKnifeTestActivity.class),
 				new Item("DataBindingTestActivity",DataBindingTestActivity.class),
-				/*new Item("webview",WebViewActivity.class),new Item("webview2",WebView2Activity.class),new Item("webviewcache",WebViewCacheActivity.class),*/
+				/*view test*/
 				new Item("animation",AnimationActivity.class),new Item("animation2",Animation2Activity.class),new Item("animation3",Animation3Activity.class),
 				new Item("scroller",ScrollerActivity.class),new Item("ViewScroll",ViewScrollActivity.class),
 				new Item("myview",MyViewActivity.class),

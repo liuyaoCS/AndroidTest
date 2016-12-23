@@ -236,7 +236,7 @@
             android:name="com.example.activity.function.FragmentTestActivity"
             android:label="@string/title_activity_fragment_test" />
         <activity
-            android:name="com.example.activity.function.AdapterActivity"
+            android:name="com.example.activity.function.AdaptationActivity"
             android:label="@string/title_activity_adapter" />
         <activity
             android:name="com.example.activity.function.AsyncActivity"
@@ -278,7 +278,8 @@
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name="com.example.activity.function.WebViewUploadFileActivity" />
         <activity android:name="com.example.activity.function.ButterKnifeTestActivity" />
-        <activity android:name="com.example.activity.function.DataBindingTestActivity"></activity>
+        <activity android:name="com.example.activity.function.DataBindingTestActivity" />
+        <activity android:name="com.example.activity.function.GreenDAOActivity"></activity>
     </application>
 
 </manifest>
