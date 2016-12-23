@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:title="添加"
+        android:icon="@mipmap/ic_menu_add"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="100"
+        android:title="删除"
+        android:icon="@mipmap/ic_menu_delete"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/listview"
+        android:orderInCategory="100"
+        android:title="listview"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/gridview"
+        android:orderInCategory="100"
+        android:title="gridview"
+        app:showAsAction="never" />
+
+</menu>

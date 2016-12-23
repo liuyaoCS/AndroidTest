@@ -279,7 +279,9 @@
         <activity android:name="com.example.activity.function.WebViewUploadFileActivity" />
         <activity android:name="com.example.activity.function.ButterKnifeTestActivity" />
         <activity android:name="com.example.activity.function.DataBindingTestActivity" />
-        <activity android:name="com.example.activity.function.GreenDAOActivity"></activity>
+        <activity android:name="com.example.activity.function.GreenDAOActivity" />
+        <activity android:name="com.example.activity.view.RecyclerViewActivity"
+            android:theme="@style/RecylerTheme"></activity>
     </application>
 
 </manifest>

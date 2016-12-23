@@ -24,6 +24,7 @@ import com.example.activity.view.MyViewActivity;
 import com.example.activity.view.PathMenuMainActivity;
 import com.example.activity.view.PullLayoutActivity;
 import com.example.activity.view.PullRefreshMainActivity;
+import com.example.activity.view.RecyclerViewActivity;
 import com.example.activity.view.ScrollerActivity;
 import com.example.activity.view.ShaderActivity;
 import com.example.activity.view.SurfaceActivity;
@@ -114,6 +115,7 @@ public class MainActivity extends Activity{
 				new Item("ButterKnifeTestActivity",ButterKnifeTestActivity.class),
 				new Item("DataBindingTestActivity",DataBindingTestActivity.class),
 				/*view test*/
+				new Item("RecyclerViewActivity",RecyclerViewActivity.class),
 				new Item("animation",AnimationActivity.class),new Item("animation2",Animation2Activity.class),new Item("animation3",Animation3Activity.class),
 				new Item("scroller",ScrollerActivity.class),new Item("ViewScroll",ViewScrollActivity.class),
 				new Item("myview",MyViewActivity.class),

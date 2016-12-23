@@ -9,7 +9,11 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.adapter.TestAdapter;
 import com.example.androidtest.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -17,11 +21,13 @@ import butterknife.OnClick;
 
 
 public class CommonTestActivity extends Activity {
+
+    @Bind(R.id.list)
     ListView listView;
-    @Bind(R.id.tv)
-    TextView tv;
     @Bind(R.id.btn)
     Button btn;
+    private final List<String> datas = new ArrayList<>();
+    private final TestAdapter testAdapter = new TestAdapter(this, datas);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +36,16 @@ public class CommonTestActivity extends Activity {
 
         ButterKnife.bind(this);
 
+        datas.add("ly");
+        datas.add("zs");
+        listView.setAdapter(testAdapter);
+
     }
 
 
     @OnClick(R.id.btn)
     public void onClick() {
-        tv.setVisibility(View.GONE);
+        datas.add("zzs");
+        testAdapter.notifyDataSetChanged();
     }
 }
