@@ -1,4 +1,4 @@
-package com.example.activity;
+package com.example.activity.view;
 
 
 import android.app.Activity;
@@ -11,21 +11,11 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import com.example.adapter.TestAdapter;
 import com.example.androidtest.R;
 
-import java.util.ArrayList;
-import java.util.List;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-
-
-public class CommonTestActivity extends Activity implements Runnable{
+public class Surface2CanvasActivity extends Activity implements Runnable{
 
     Button button;
     SurfaceView surfaceView;
@@ -37,7 +27,7 @@ public class CommonTestActivity extends Activity implements Runnable{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_common_test);
+        setContentView(R.layout.activity_surface_2Canvas);
         init();
     }
     private void init() {

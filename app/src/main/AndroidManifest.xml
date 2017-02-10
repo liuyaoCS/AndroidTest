@@ -282,6 +282,7 @@
         <activity android:name="com.example.activity.function.GreenDAOActivity" />
         <activity android:name="com.example.activity.view.RecyclerViewActivity"
             android:theme="@style/RecylerTheme"></activity>
+        <activity android:name="com.example.activity.view.Surface2CanvasActivity" />
     </application>
 
 </manifest>

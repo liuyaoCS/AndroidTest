@@ -3,6 +3,7 @@ package com.example.view;
 import com.example.androidtest.R;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
@@ -64,6 +65,12 @@ public class NavView extends ViewGroup{
 		}
 
 	}
+
+	@Override
+	protected void onDraw(Canvas canvas) {
+		super.onDraw(canvas);
+	}
+
 	public void testFunc(){
 		this.getChildAt(1).offsetTopAndBottom(-400);
 		//this.getChildAt(1).scrollBy(0, -200);

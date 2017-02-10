@@ -27,6 +27,7 @@ import com.example.activity.view.PullRefreshMainActivity;
 import com.example.activity.view.RecyclerViewActivity;
 import com.example.activity.view.ScrollerActivity;
 import com.example.activity.view.ShaderActivity;
+import com.example.activity.view.Surface2CanvasActivity;
 import com.example.activity.view.SurfaceActivity;
 import com.example.activity.view.VideoActivity;
 import com.example.activity.view.ViewScrollActivity;
@@ -127,6 +128,7 @@ public class MainActivity extends Activity{
 				new Item("record",MovieRecorderActivity.class),
 				new Item("record2",MovieRecorderActivity2.class),
 				new Item("video",VideoActivity.class),
+				new Item("Surface2CanvasActivity", Surface2CanvasActivity.class),
 				new Item("videoview-rtsp",VideoViewActivity.class),
 				new Item("shader",ShaderActivity.class),new Item("wave",WaveActivity.class),
 				new Item("iqiyi",IqiyiMainActivity.class),

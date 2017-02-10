@@ -19,7 +19,7 @@ public class ScrollerActivity extends Activity {
         super.onCreate(savedInstanceState);    
         mScroller = ScrollerCompat.create(this);  
         
-        RelativeLayout mainlayout=new RelativeLayout(this);
+        final RelativeLayout mainlayout=new RelativeLayout(this);
         RelativeLayout.LayoutParams p1 = new RelativeLayout.LayoutParams    
         (RelativeLayout.LayoutParams.FILL_PARENT,RelativeLayout.LayoutParams.FILL_PARENT);        
 
@@ -29,7 +29,7 @@ public class ScrollerActivity extends Activity {
        
         
         mylayout = new MyRelativeLayout(this);        
-        mylayout.setBackgroundColor(Color.parseColor("#00000000"));  
+        mylayout.setBackgroundColor(Color.parseColor("#55f0f000"));
         btn2 = new Button(this);         
         btn2.setText("btn2 in mylayout");  
         btn2.setOnClickListener(new OnClickListener(){    
