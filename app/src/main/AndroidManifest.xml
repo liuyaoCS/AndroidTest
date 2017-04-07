@@ -285,7 +285,12 @@
             android:theme="@style/RecylerTheme" />
         <activity android:name="com.example.activity.view.Surface2CanvasActivity" />
         <activity android:name="com.example.activity.view.ArrayListViewActivity" />
-        <activity android:name="com.example.activity.view.MaterialDesignActivity"></activity>
+        <activity
+            android:name="com.example.activity.view.MaterialDesignActivity"
+            android:theme="@style/RecylerTheme" />
+        <activity android:name="com.example.activity.view.AppBarLayoutActivity"
+            android:theme="@style/RecylerTheme" >
+        </activity>
     </application>
 
 </manifest>
