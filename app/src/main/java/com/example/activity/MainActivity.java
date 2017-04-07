@@ -15,11 +15,13 @@ import com.example.activity.support.SwipeRefreshLayoutActivity;
 import com.example.activity.view.Animation2Activity;
 import com.example.activity.view.Animation3Activity;
 import com.example.activity.view.AnimationActivity;
+import com.example.activity.view.ArrayListViewActivity;
 import com.example.activity.view.EventBusActivity;
 import com.example.activity.view.FiveEightActivity;
 import com.example.activity.view.GifActivity;
 import com.example.activity.view.IqiyiMainActivity;
 import com.example.activity.function.JSActivity;
+import com.example.activity.view.MaterialDesignActivity;
 import com.example.activity.view.MyViewActivity;
 import com.example.activity.view.PathMenuMainActivity;
 import com.example.activity.view.PullLayoutActivity;
@@ -116,13 +118,10 @@ public class MainActivity extends Activity{
 				new Item("ButterKnifeTestActivity",ButterKnifeTestActivity.class),
 				new Item("DataBindingTestActivity",DataBindingTestActivity.class),
 				/*view test*/
-				new Item("RecyclerViewActivity",RecyclerViewActivity.class),
 				new Item("animation",AnimationActivity.class),new Item("animation2",Animation2Activity.class),new Item("animation3",Animation3Activity.class),
 				new Item("scroller",ScrollerActivity.class),new Item("ViewScroll",ViewScrollActivity.class),
 				new Item("myview",MyViewActivity.class),
 				new Item("viewtest",ViewTestActivity.class),
-				new Item("draggerviewtest", DraggerViewActivity.class),
-				new Item("ViewDragHelperTest", ViewDragHelperTestActivity.class),
 				new Item("gif",GifActivity.class),
 				new Item("photo",SurfaceActivity.class),
 				new Item("record",MovieRecorderActivity.class),
@@ -136,6 +135,12 @@ public class MainActivity extends Activity{
 				new Item("pathmenu",PathMenuMainActivity.class),
 				new Item("pulllayout",PullLayoutActivity.class),
 				new Item("pullrefresh",PullRefreshMainActivity.class),
+				/*new test*/
+				new Item("ArrayListViewActivity",ArrayListViewActivity.class),
+				new Item("RecyclerViewActivity",RecyclerViewActivity.class),
+				new Item("MaterialDesignActivity",MaterialDesignActivity.class),
+				new Item("draggerviewtest", DraggerViewActivity.class),
+				new Item("ViewDragHelperTest", ViewDragHelperTestActivity.class),
 				new Item("ActionbarActivity",ActionbarActivity.class),
 				new Item("SwipeRefreshLayoutActivity",SwipeRefreshLayoutActivity.class),
 				new Item("CardViewActivity", CardViewActivity.class)

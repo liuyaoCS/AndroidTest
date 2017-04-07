@@ -5,9 +5,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.androidtest.R;
+import com.example.entity.newsList.ListItem;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -15,33 +18,21 @@ import java.util.List;
  * Created by baochen on 2016/1/13.
  */
 public class RecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder>{
-    protected List<String> mData;//数据
+    protected List<ListItem> mData;//数据
     private LayoutInflater mInflater;
 
-    /**
-     * 点击事件的接口
-     */
-    public interface  OnItemClickListener{
-        void onItemClickListener(View view, int position);//点击
-        void onItemLongClickListener(View view, int position);//长按
-    }
-    private OnItemClickListener mOnItemClickListener;
-
-    public void setmOnItemClickListener(OnItemClickListener mOnItemClickListener) {
-        this.mOnItemClickListener = mOnItemClickListener;
-    }
-
+    private Context mContext;
     /**
      * 构造函数
      * @param context
      * @param datas
      */
-    public RecyclerViewAdapter(Context context,List<String> datas) {
+    public RecyclerViewAdapter(Context context,List<ListItem> datas) {
         this.mData=datas;
+        this.mContext=context;
         mInflater=LayoutInflater.from(context);
 
     }
-
     /**
      * 必须实现的方法
      * @return
@@ -63,7 +54,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder>{
         MyViewHolder viewHolder=new MyViewHolder(view);
         return  viewHolder;
     }
-
     /**
      * 绑定数据ViewHolder里面的数据
      * @param holder
@@ -72,62 +62,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder>{
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
-        holder.item_recyclerview.setText(mData.get(position));
-        setUpItemEvent(holder);
+        holder.item_recyclerview.setText(mData.get(position).getTitle());
+        Picasso.with(mContext).load(mData.get(position).getPictureList()[0]).into(holder.image);
     }
-
-    /**
-     * 实现瀑布流布局中的相关事件
-     * @param holder
-     */
-    protected void setUpItemEvent(final MyViewHolder holder) {
-        if (mOnItemClickListener!=null){
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               int layoutPosition=holder.getLayoutPosition();
-                    mOnItemClickListener.onItemClickListener(holder.itemView,layoutPosition);
-                }
-
-        });
-        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                int layoutPosition=holder.getLayoutPosition();
-                mOnItemClickListener.onItemLongClickListener(holder.itemView,layoutPosition);
-                return false;
-            }
-        });
-        }
-    }
-
-    /**
-     * 添加
-     * @param position
-     */
-    public void add(int position){
-        mData.add(position,"添加一个");
-        notifyItemInserted(position);
-
-    }
-
-    /**
-     * 删除
-     * @param position
-     */
-    public void delete(int position){
-        mData.remove("删除一个");
-        notifyItemRemoved(position);
-    }
-
 
 }
 
 class MyViewHolder extends RecyclerView.ViewHolder{
 
     TextView item_recyclerview;
+    ImageView image;
     public MyViewHolder(View itemView) {
         super(itemView);
         item_recyclerview= (TextView) itemView.findViewById(R.id.item_recyclerview);
+        image= (ImageView) itemView.findViewById(R.id.image);
     }
 }

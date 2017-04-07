@@ -9,5 +9,10 @@
         android:layout_width="72dp"
         android:layout_height="match_parent"
         android:gravity="center"/>
-
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/image"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="100dp"/>
 </FrameLayout>

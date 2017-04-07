@@ -1,37 +1,19 @@
-package com.example.activity;
+package com.example.activity.view;
 
 
 import android.app.Activity;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.adapter.TestAdapter;
 import com.example.androidtest.R;
-import com.example.view.MyTextView;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-
-import static com.example.androidtest.R.id.tv;
 
 
-public class CommonTestActivity extends Activity{
+public class ArrayListViewActivity extends Activity{
 
     Button btn;
     ListView list;
@@ -39,7 +21,7 @@ public class CommonTestActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_common_test);
+        setContentView(R.layout.activity_arraylistview_test);
         init();
 
     }

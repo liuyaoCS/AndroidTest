@@ -27,7 +27,7 @@ public class Surface2CanvasActivity extends Activity implements Runnable{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_surface_2Canvas);
+        setContentView(R.layout.activity_surface_2canvas);
         init();
     }
     private void init() {

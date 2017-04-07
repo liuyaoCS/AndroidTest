@@ -280,9 +280,12 @@
         <activity android:name="com.example.activity.function.ButterKnifeTestActivity" />
         <activity android:name="com.example.activity.function.DataBindingTestActivity" />
         <activity android:name="com.example.activity.function.GreenDAOActivity" />
-        <activity android:name="com.example.activity.view.RecyclerViewActivity"
-            android:theme="@style/RecylerTheme"></activity>
+        <activity
+            android:name="com.example.activity.view.RecyclerViewActivity"
+            android:theme="@style/RecylerTheme" />
         <activity android:name="com.example.activity.view.Surface2CanvasActivity" />
+        <activity android:name="com.example.activity.view.ArrayListViewActivity" />
+        <activity android:name="com.example.activity.view.MaterialDesignActivity"></activity>
     </application>
 
 </manifest>

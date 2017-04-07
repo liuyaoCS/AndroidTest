@@ -43,9 +43,13 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile files('libs/jpush-sdk-release1.7.5.jar')
-    compile files('libs/retrofit-1.9.0.jar')
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile files('libs/picasso-2.5.2.jar')
     compile project(':androidref')
     compile 'com.jakewharton:butterknife:7.0.0'
     compile 'org.greenrobot:greendao:3.0.1'
     compile'org.greenrobot:greendao-generator:3.0.0'
+    compile 'com.android.support:design:23.1.1'
+
 }
