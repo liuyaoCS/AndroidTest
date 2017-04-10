@@ -288,8 +288,12 @@
         <activity
             android:name="com.example.activity.view.MaterialDesignActivity"
             android:theme="@style/RecylerTheme" />
-        <activity android:name="com.example.activity.view.AppBarLayoutActivity"
-            android:theme="@style/RecylerTheme" >
+        <activity
+            android:name="com.example.activity.view.AppBarLayoutActivity"
+            android:theme="@style/RecylerTheme">
+        </activity>
+        <activity android:name="com.example.activity.support.CoordinatorLayoutActivity"
+            android:theme="@style/COLTheme">
         </activity>
     </application>
 

@@ -11,6 +11,7 @@ import com.example.activity.function.PermissionActivity;
 import com.example.activity.function.WebViewUploadFileActivity;
 import com.example.activity.support.ActionbarActivity;
 import com.example.activity.support.CardViewActivity;
+import com.example.activity.support.CoordinatorLayoutActivity;
 import com.example.activity.support.SwipeRefreshLayoutActivity;
 import com.example.activity.view.Animation2Activity;
 import com.example.activity.view.Animation3Activity;
@@ -138,8 +139,9 @@ public class MainActivity extends Activity{
 				/*new test*/
 				new Item("ArrayListViewActivity",ArrayListViewActivity.class),
 				new Item("RecyclerViewActivity",RecyclerViewActivity.class),
-				new Item("MaterialDesignActivity",MaterialDesignActivity.class),
 				new Item("draggerviewtest", DraggerViewActivity.class),
+				new Item("MaterialDesignActivity",MaterialDesignActivity.class),
+				new Item("CoordinatorLayoutActivity",CoordinatorLayoutActivity.class),
 				new Item("ViewDragHelperTest", ViewDragHelperTestActivity.class),
 				new Item("ActionbarActivity",ActionbarActivity.class),
 				new Item("SwipeRefreshLayoutActivity",SwipeRefreshLayoutActivity.class),
