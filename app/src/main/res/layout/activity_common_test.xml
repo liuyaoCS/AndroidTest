@@ -15,12 +15,7 @@
           android:layout_height="wrap_content"
           android:text="test"
           android:id="@+id/btn"/>
-      <ListView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:id="@+id/list"
-          android:layout_below="@id/btn">
-      </ListView>
+
    </RelativeLayout>
 
 </com.example.view.MyRelativeLayout>

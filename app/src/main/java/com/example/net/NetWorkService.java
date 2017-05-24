@@ -10,10 +10,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by liuyao on 2017/4/7 0007.
  */
 
-public class NetworkService {
+public class NetWorkService {
     public static final String MOB_LIST_BASE = "http://m.toutiao.chinaso.com";
-    static NetworkServiceAPI instance;
-    static public NetworkServiceAPI getInstance(){
+    static NetWorkServiceAPI instance;
+    static public NetWorkServiceAPI getInstance(){
         if (instance != null)
             return instance;
 
@@ -22,7 +22,7 @@ public class NetworkService {
                 .baseUrl(MOB_LIST_BASE)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
-        instance = restAdapter.create(NetworkServiceAPI.class);
+        instance = restAdapter.create(NetWorkServiceAPI.class);
 
         return instance;
     }

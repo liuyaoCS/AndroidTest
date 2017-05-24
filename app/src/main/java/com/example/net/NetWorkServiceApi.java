@@ -10,7 +10,7 @@ import retrofit2.http.Query;
  * Created by liuyao on 2017/4/7 0007.
  */
 
-public interface NetworkServiceAPI {
+public interface NetWorkServiceAPI {
     //list
     @GET("1/category/main")
     Call<NewsAll> fetchList(@Query("id") String id, @Query("page") int page);

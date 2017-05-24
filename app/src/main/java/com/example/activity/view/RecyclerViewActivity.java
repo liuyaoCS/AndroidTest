@@ -20,7 +20,7 @@ import com.example.adapter.RecyclerViewAdapter;
 import com.example.androidtest.R;
 import com.example.entity.newsList.ListItem;
 import com.example.entity.newsList.NewsAll;
-import com.example.net.NetworkService;
+import com.example.net.NetWorkService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +53,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Call<NewsAll> response= NetworkService.getInstance().fetchList("news_all",mCurrentPage++);
+                        Call<NewsAll> response= NetWorkService.getInstance().fetchList("news_all",mCurrentPage++);
                         response.enqueue(new Callback<NewsAll>() {
                             @Override
                             public void onResponse(Call<NewsAll> call, Response<NewsAll> response) {
@@ -81,7 +81,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         loadNewsList();
     }
     private void loadNewsList() {
-        Call<NewsAll> response= NetworkService.getInstance().fetchList("news_all",0);
+        Call<NewsAll> response= NetWorkService.getInstance().fetchList("news_all",0);
         response.enqueue(new Callback<NewsAll>() {
             @Override
             public void onResponse(Call<NewsAll> call, Response<NewsAll> response) {

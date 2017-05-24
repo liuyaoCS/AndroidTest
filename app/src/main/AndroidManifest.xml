@@ -66,6 +66,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="com.qihoo360.safeqr.CALLUP" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="360SafeQR001"
+                    />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.activity.view.AnimationActivity"
