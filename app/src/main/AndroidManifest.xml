@@ -68,10 +68,10 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="com.qihoo360.safeqr.CALLUP" />
+
                 <category android:name="android.intent.category.DEFAULT" />
-                <data
-                    android:scheme="360SafeQR001"
-                    />
+
+                <data android:scheme="360SafeQR001" />
             </intent-filter>
         </activity>
         <activity
@@ -297,11 +297,11 @@
             android:theme="@style/RecylerTheme" />
         <activity
             android:name="com.example.activity.view.AppBarLayoutActivity"
-            android:theme="@style/RecylerTheme">
-        </activity>
-        <activity android:name="com.example.activity.support.CoordinatorLayoutActivity"
-            android:theme="@style/COLTheme">
-        </activity>
+            android:theme="@style/RecylerTheme"></activity>
+        <activity
+            android:name="com.example.activity.support.CoordinatorLayoutActivity"
+            android:theme="@style/COLTheme"></activity>
+        <activity android:name="com.example.activity.function.SecureActivity"></activity>
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import com.example.activity.function.DataBindingTestActivity;
 import com.example.activity.function.GreenDAOActivity;
 import com.example.activity.function.Permission2Activity;
 import com.example.activity.function.PermissionActivity;
+import com.example.activity.function.SecureActivity;
 import com.example.activity.function.WebViewUploadFileActivity;
 import com.example.activity.support.ActionbarActivity;
 import com.example.activity.support.CardViewActivity;
@@ -107,6 +108,8 @@ public class MainActivity extends Activity{
 				new Item("Adaptation",AdaptationActivity.class),
 				new Item("permission",PermissionActivity.class),
 				new Item("permission2",Permission2Activity.class),
+				/*secure test*/
+				new Item("SecureActivity",SecureActivity.class),
 				/*net test*/
 				new Item("js",JSActivity.class),
 				new Item("WebViewUploadFileActivity",WebViewUploadFileActivity.class),
