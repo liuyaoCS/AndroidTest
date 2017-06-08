@@ -77,7 +77,13 @@
         <activity
             android:name="com.example.activity.view.AnimationActivity"
             android:hardwareAccelerated="false"
-            android:label="@string/title_activity_show_view" />
+            android:label="@string/title_activity_show_view" >
+                <intent-filter>
+                    <action android:name="com.ly.test"/>
+                    <category android:name="android.intent.category.BROWSABLE"/>
+
+                </intent-filter>
+            </activity>
         <activity
             android:name="com.example.activity.view.ScrollerActivity"
             android:label="title_activity_scroller" />
@@ -85,7 +91,7 @@
             android:name="com.example.activity.CommonTestActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="title_activity_common"
-            android:taskAffinity="com.chinaso.so">
+            >
             <intent-filter>
                 <action android:name="com.example.androidTest.TEST_ACTION" />
 

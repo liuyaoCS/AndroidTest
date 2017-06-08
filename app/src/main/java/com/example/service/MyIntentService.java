@@ -12,12 +12,12 @@ public class MyIntentService extends IntentService{
     public MyIntentService(){
         super("com.example.service.MyIntentService");
         String threadName=Thread.currentThread().getName();
-        Log.i("ly", "threadname=" + threadName);
+        Log.i("ly-s", "threadname=" + threadName);
     }
     @Override
     protected void onHandleIntent(Intent intent) {
         String threadName=Thread.currentThread().getName();
-        Log.i("ly", "onHandleIntent," + threadName);
+        Log.i("ly-s", "onHandleIntent," + threadName);
         try {
             Thread.sleep(11000);
         } catch (InterruptedException e) {

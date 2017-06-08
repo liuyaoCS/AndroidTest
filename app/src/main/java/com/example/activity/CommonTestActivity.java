@@ -2,6 +2,8 @@ package com.example.activity;
 
 
 import android.app.Activity;
+import android.app.ActivityManager;
+import android.app.KeyguardManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -19,6 +21,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.androidtest.R;
+import com.jaredrummler.android.processes.AndroidProcesses;
+import com.jaredrummler.android.processes.models.AndroidAppProcess;
 
 import org.json.JSONObject;
 
@@ -28,6 +32,8 @@ import java.math.BigInteger;
 import java.util.Iterator;
 import java.util.List;
 
+import static android.app.ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND;
+import static android.app.ActivityManager.RunningAppProcessInfo.IMPORTANCE_VISIBLE;
 import static android.content.pm.PackageManager.MATCH_DEFAULT_ONLY;
 
 
@@ -63,7 +69,25 @@ public class CommonTestActivity extends Activity {
                 //saveCrashInfoToFile(CommonTestActivity.this);
                 //tryStartSupportAppByIntent(CommonTestActivity.this);
                 //tryStartSupportAppByScheme(CommonTestActivity.this,"youon://","com.shuishan.ridespot");
-                openAutoStartSetting(CommonTestActivity.this);
+                //openAutoStartSetting(CommonTestActivity.this);
+                //com.beastbike.bluegogo.service.BGCooperationService
+
+                Intent intent=new Intent(Intent.ACTION_VIEW);
+                Uri uri=Uri.parse("youon://");
+                intent.setData(uri);
+                intent.setPackage("com.shuishan.ridespot");
+                PackageManager packageManager = getPackageManager();
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                if (packageManager.queryIntentActivities(intent, 0).size() > 0) {
+                    startActivity(intent);
+                    Log.i("ly-s","success");
+
+                }else{
+                    Log.i("ly-s","not match");
+
+                }
+
             }
         });
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -71,8 +95,27 @@ public class CommonTestActivity extends Activity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                //startApp(CommonTestActivity.this);
-                startAppTest(CommonTestActivity.this);
+                if(isBackgroundRunning()){
+                    Intent intent=new Intent("com.ly.test1");//"com.ly.test1"
+                    intent.setPackage("com.shuishan.ridespot");
+                    PackageManager packageManager = getPackageManager();
+
+                    if (packageManager.queryIntentServices(intent, 0).size() > 0) {
+                        //intent.setComponent(new ComponentName("com.shuishan.ridespot", "com.shuishan.ridespot.MyService"));
+                        startService(intent);
+                        Toast.makeText(CommonTestActivity.this,"success",Toast.LENGTH_SHORT).show();
+
+                    }else{
+                        Log.i("ly-s","not match");
+                        Toast.makeText(CommonTestActivity.this,"not match",Toast.LENGTH_SHORT).show();
+
+                    }
+                }else{
+                    Toast.makeText(CommonTestActivity.this,"com.shuishan.ridespot not alive",Toast.LENGTH_SHORT).show();
+                }
+
+
+
             }
         });
     }
@@ -258,4 +301,21 @@ public class CommonTestActivity extends Activity {
             context.startActivity(intent);
         }
     }
+    private boolean isBackgroundRunning() {
+        String processName = "com.shuishan.ridespot";
+
+        ActivityManager activityManager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
+        KeyguardManager keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
+
+        if (activityManager == null) return false;
+        // get running application processes
+        List<AndroidAppProcess> processList = AndroidProcesses.getRunningAppProcesses();
+        for (AndroidAppProcess process : processList) {
+            if (process.name.startsWith(processName)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
